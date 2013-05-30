@@ -1,8 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    
+    <!-- can't find: addedittask_notecolon ?
+    	 just use  : task_notecolon 
+    	 
+    	 same goes for: timerequiredcolon
+    	 				categorycolon
+    	 				importancecolon
+    	 				reminderscolon
+    	 				colorcolon
+    	 				notatall
+    	 				extremely
+    	 				always
+    	 				never-->
+    
 
     <string name="app_name">MoMe</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_mome">Mo Me</string>
+    <string name="title_motivateme">Motivate Me</string>
+    <string name="title_todolist">To Do List</string>
+    <string name="title_task">Task</string>
+    <string name="title_addedittask">Add/Edit Task</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_help">Help</string>
+    <string name="button_todolist">To Do List</string>
+    <string name="mome_dialog_welcome">Welcome to Mo Me!!! I\'m your personal motivator!</string>
+    <string-array name="mome_dialog_quote">
+        <item >&quot;If you wait for perfect conditions, you will never get anything done.&quot; -Ecclesiastes 11:4</item>If you wait for perfect conditions, you will never get anything done.
+    </string-array>
+    <string name="mome_dialog_duedate">Your most recent due date is in 8 hours! Perhaps you should work on that task?</string>
+    <string name="mome_button_motivateme">Motivate Me!</string>
+    <string name="motivateme_dialog_welcome">What type of motivation do you need?</string>
+    <string name="motivateme_button_todolist">To Do List Motivation!</string>
+    <string name="todolist_dialog_welcome">Making a To Do List would help organize what you have to do.</string>
+    <string name="todolist_button_addtask">Add Task</string>
+    <string name="todolist_button_expand">Expand</string>
+    <string name="task_button_completed">Completed</string>
+    <string name="task_button_edit">Edit</string>
+    <string name="task_button_back">Back</string>
+    <string name="task_namecolon">Name: </string>
+    <string name="task_duecolon">Due: </string>
+    <string name="task_timerequiredcolon">Time Required to Complete: </string>
+    <string name="task_categorycolon">Category: </string>
+    <string name="task_colorcolon">Color: </string>
+    <string name="task_importancecolon">Importance: </string>
+    <string name="task_reminderscolon">Reminders: </string>
+    <string name="task_notatall">Not at all</string>
+    <string name="task_extremely">Extremely</string>
+    <string name="task_always">Always</string>
+    <string name="task_never">Never</string>
+    <string name="task_notecolon">Note: </string>
+    <string name="addedittask_textfield_nameoftask">Name of Task</string>
+    <string name="addedittask_duedatequestion">Due Date?</string>
+    <string name="addedittask_timequestion">Time?</string>
+    <string name="category_job">Job</string>
+    <string name="category_school">School</string>
+    <string name="category_recreation">Recreation</string>
+    <string name="category_home">Home</string>
+    <string name="category_social">Social</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_habits">Habits</string>
 
 </resources>
