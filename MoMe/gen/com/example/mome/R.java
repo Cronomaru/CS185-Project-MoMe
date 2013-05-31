@@ -27,20 +27,47 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f090000;
+        public static final int action_settings=0x7f09000a;
+        public static final int button1=0x7f090000;
+        public static final int button2=0x7f090001;
+        public static final int button3=0x7f090002;
+        public static final int textView1=0x7f090009;
+        public static final int textView2=0x7f090006;
+        public static final int textView3=0x7f090007;
+        public static final int textView4=0x7f090008;
+        public static final int textView_due=0x7f090004;
+        public static final int textView_name=0x7f090003;
+        public static final int textView_timerequired=0x7f090005;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int ideas=0x7f030001;
+        public static final int activity_task=0x7f030001;
+        public static final int ideas=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f080000;
+        public static final int task=0x7f080001;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int addedittask_duedatequestion=0x7f050023;
         public static final int addedittask_textfield_nameoftask=0x7f050022;
         public static final int addedittask_timequestion=0x7f050024;
+        /** 
+         can't find: addedittask_notecolon ?
+    	 just use  : task_notecolon 
+    	 
+    	 same goes for: timerequiredcolon
+    	 				categorycolon
+    	 				importancecolon
+    	 				reminderscolon
+    	 				colorcolon
+    	 				notatall
+    	 				extremely
+    	 				always
+    	 				never
+    
+         */
         public static final int app_name=0x7f050000;
         public static final int button_todolist=0x7f05000a;
         public static final int category_habits=0x7f05002b;
@@ -59,6 +86,7 @@ public final class R {
         public static final int task_always=0x7f05001f;
         public static final int task_button_back=0x7f050015;
         public static final int task_button_completed=0x7f050013;
+        public static final int task_button_delete=0x7f05002d;
         public static final int task_button_edit=0x7f050014;
         public static final int task_categorycolon=0x7f050019;
         public static final int task_colorcolon=0x7f05001a;
@@ -71,6 +99,7 @@ public final class R {
         public static final int task_notecolon=0x7f050021;
         public static final int task_reminderscolon=0x7f05001c;
         public static final int task_timerequiredcolon=0x7f050018;
+        public static final int title_activity_task=0x7f05002c;
         public static final int title_addedittask=0x7f050007;
         public static final int title_help=0x7f050009;
         public static final int title_mome=0x7f050003;
