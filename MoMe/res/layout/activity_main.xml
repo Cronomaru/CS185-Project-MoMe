@@ -2,19 +2,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#339966"
     tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:adjustViewBounds="false"
+        android:background="@drawable/avatar_owl_01"
+        android:contentDescription="@string/title_motivateme"
+        android:scaleType="fitXY" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_motivateme"
         android:fontFamily="Sans"
-         />
+        android:text="@string/title_motivateme" />
 
 </LinearLayout>
