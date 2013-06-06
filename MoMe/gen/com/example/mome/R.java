@@ -76,20 +76,22 @@ public final class R {
         public static final int textView_yourmotivatees=0x7f090006;
     }
     public static final class layout {
-        public static final int activity_im_motivational=0x7f030000;
-        public static final int activity_im_motivational_prompt=0x7f030001;
-        public static final int activity_main=0x7f030002;
-        public static final int activity_motivate_me=0x7f030003;
-        public static final int activity_social=0x7f030004;
-        public static final int activity_task=0x7f030005;
+        public static final int activity_chat=0x7f030000;
+        public static final int activity_im_motivational=0x7f030001;
+        public static final int activity_im_motivational_prompt=0x7f030002;
+        public static final int activity_main=0x7f030003;
+        public static final int activity_motivate_me=0x7f030004;
+        public static final int activity_social=0x7f030005;
+        public static final int activity_task=0x7f030006;
     }
     public static final class menu {
-        public static final int im_motivational=0x7f080000;
-        public static final int im_motivational_prompt=0x7f080001;
-        public static final int main=0x7f080002;
-        public static final int motivate_me=0x7f080003;
-        public static final int social=0x7f080004;
-        public static final int task=0x7f080005;
+        public static final int chat=0x7f080000;
+        public static final int im_motivational=0x7f080001;
+        public static final int im_motivational_prompt=0x7f080002;
+        public static final int main=0x7f080003;
+        public static final int motivate_me=0x7f080004;
+        public static final int social=0x7f080005;
+        public static final int task=0x7f080006;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -110,6 +112,7 @@ public final class R {
     	 				extremely
     	 				always
     	 				never
+
 
 
 
@@ -164,6 +167,7 @@ public final class R {
         public static final int task_notecolon=0x7f050021;
         public static final int task_reminderscolon=0x7f05001c;
         public static final int task_timerequiredcolon=0x7f050018;
+        public static final int title_activity_chat=0x7f050042;
         public static final int title_activity_im_motivational=0x7f050032;
         public static final int title_activity_im_motivational_prompt=0x7f05003f;
         public static final int title_activity_motivate_me=0x7f05002e;
