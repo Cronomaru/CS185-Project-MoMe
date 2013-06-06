@@ -87,6 +87,8 @@ public final class R {
         public static final int textView_yourcurrentrating=0x7f090011;
         public static final int textView_yourmotivatees=0x7f090013;
         public static final int timePicker_time=0x7f090008;
+		public static int add;
+		public static int myList;
     }
     public static final class layout {
         public static final int activity_add_task=0x7f030000;
