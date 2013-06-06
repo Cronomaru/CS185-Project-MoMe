@@ -44,7 +44,7 @@
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="----- OR -----" />
+        android:text="@string/main_or" />
 
     <Button
         android:id="@+id/button2"
