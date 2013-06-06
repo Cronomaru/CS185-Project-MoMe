@@ -14,7 +14,7 @@
     	 				notatall
     	 				extremely
     	 				always
-    	 				never
+    	 				never
     -->
 
     <string name="app_name">MoMe</string>
@@ -73,17 +73,20 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <string name="motivateme_button_social">I Need Coaching/Help!</string>
     <string name="motivateme_button_habits">I Have/Need Habits!</string>
     <string name="title_activity_im_motivational">ImMotivational</string>
-    <string name="immotivational_button_randomperson">Random Person</string>
-    <string name="immotivational_previousmotivatorscolon">Previous Motivators:</string>
-    <string name="immotivational_friendsavailablecolon">Friends Available:</string>
-    <string name="immotivational_requestfromspecificfriendcolon">Request From Specific Friend:</string>
-    <string name="immotivational_autocomplete_friendsname">Enter Friend\'s Name</string>
-    <string name="immotivational_button_request">Request</string>
+    <string name="social_button_randomperson">Random Person</string>
+    <string name="social_previousmotivatorscolon">Previous Motivators:</string>
+    <string name="social_friendsavailablecolon">Friends Available:</string>
+    <string name="social_requestfromspecificfriendcolon">Request From Specific Friend:</string>
+    <string name="social_autocomplete_friendsname">Enter Friend\'s Name</string>
+    <string name="social_button_request">Request</string>
     <string name="title_activity_social">Social</string>
     <string name="immotivational_introcolon">Intro:</string>
     <string name="immotivational_introdefault">How can I help you?</string>
     <string name="immotivational_button_setintro">Set Intro</string>
     <string name="immotivational_yourcurrentratingcolon">Your Current Rating:</string>
     <string name="immotivational_yourmotivateescolon">Your Motivatees:</string>
+    <string name="title_activity_im_motivational_prompt">ImMotivationalPrompt</string>
+    <string name="immotivational_button_friendsonly">Friends Only</string>
+    <string name="immotivational_button_anyone">Anyone</string>
 
 </resources>

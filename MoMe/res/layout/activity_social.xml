@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView_intro"
             android:layout_centerHorizontal="true"
-            android:text="@string/immotivational_button_randomperson" />
+            android:text="@string/social_button_randomperson" />
 
         <TextView
             android:id="@+id/textView_intro"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/button_randomperson"
             android:layout_centerHorizontal="true"
-            android:text="@string/immotivational_friendsavailablecolon"
+            android:text="@string/social_friendsavailablecolon"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
 
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView2"
             android:layout_centerHorizontal="true"
-            android:text="@string/immotivational_requestfromspecificfriendcolon"
+            android:text="@string/social_requestfromspecificfriendcolon"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
 
@@ -64,7 +64,7 @@
             android:layout_below="@+id/textView_requestfromspecificfriend"
             android:layout_centerHorizontal="true"
             android:ems="10"
-            android:text="@string/immotivational_autocomplete_friendsname" >
+            android:text="@string/social_autocomplete_friendsname" >
 
             <requestFocus />
         </AutoCompleteTextView>
@@ -75,7 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/autoCompleteTextView_requestfromspecificfriend"
-            android:text="@string/immotivational_button_request" />
+            android:text="@string/social_button_request" />
 
         <ImageView
             android:id="@+id/imageView1"
@@ -91,7 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView1"
             android:layout_centerHorizontal="true"
-            android:text="@string/immotivational_previousmotivatorscolon"
+            android:text="@string/social_previousmotivatorscolon"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
 

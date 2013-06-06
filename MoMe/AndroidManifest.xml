@@ -38,6 +38,10 @@
             android:name="com.example.mome.Social"
             android:label="@string/title_activity_social" >
         </activity>
+        <activity
+            android:name="com.example.mome.ImMotivationalPrompt"
+            android:label="@string/title_activity_im_motivational_prompt" >
+        </activity>
     </application>
 
 </manifest>
