@@ -89,6 +89,21 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <string name="immotivational_button_friendsonly">Friends Only</string>
     <string name="immotivational_button_anyone">Anyone</string>
     <string name="title_activity_chat">Chat</string>
+<<<<<<< HEAD
+=======
+    <string name="title_activity_add_task">AddTask</string>
+    <string name="addtask_nameoftask">Name of Task</string>
+    <string name="addtask_duedatequestion">Due Date?</string>
+    <string name="addtask_timequestion">Time?</string>
+    <string name="main_username">Username</string>
+    <string name="main_password">Password</string>
+    <string name="main_login">Login</string>
+    <string name="main_signup">Sign up</string>
+    <string name="addtask_dayscolon">Days:</string>
+    <string name="addtask_days">Days</string>
+    <string name="addtask_timerequiredtofinishcolon">"Time Required to Finish: "</string>
+    <string name="addtask_hours">Hours</string>
+>>>>>>> 3a7ba76386952722d1ae85cd9a96b5d677bd3e63
     <string name="title_activity_login">MainActivity</string>
 
 </resources>
