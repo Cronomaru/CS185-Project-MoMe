@@ -12,11 +12,9 @@
     <ImageView
         android:id="@+id/avatar"
         android:layout_width="match_parent"
-        android:layout_height="216dp"
-        android:adjustViewBounds="false"
-        android:background="@drawable/avatar_owl_01"
+        android:layout_height="wrap_content"
         android:contentDescription="@string/title_motivateme"
-        android:scaleType="fitXY" />
+        android:src="@drawable/avatar_01" />
 
     <Button
         android:id="@+id/button_completed"
