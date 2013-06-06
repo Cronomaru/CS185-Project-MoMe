@@ -1,3 +1,5 @@
+<!-- By: May Camp -->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,7 +16,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/avatar_owl_01" />
+        android:layout_alignRight="@+id/button_toomuchtodo"
+        android:src="@drawable/ic_launcher" />
 
     <Button
         android:id="@+id/button_toomuchtodo"

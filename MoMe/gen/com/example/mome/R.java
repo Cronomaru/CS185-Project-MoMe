@@ -29,44 +29,54 @@ public final class R {
         public static final int logo_idea=0x7f020002;
     }
     public static final class id {
-        public static final int action_settings=0x7f09001b;
-        public static final int avatar=0x7f090000;
-        public static final int button_completed=0x7f090001;
-        public static final int button_delete=0x7f090008;
-        public static final int button_edit=0x7f090007;
-        public static final int button_ihaveneedhabits=0x7f090006;
-        public static final int button_ineedcoachinghelp=0x7f090005;
-        public static final int button_toolittletodo=0x7f090004;
-        public static final int button_toomuchtodo=0x7f090003;
-        public static final int imageView1=0x7f090002;
-        public static final int imageView_color=0x7f090010;
-        public static final int seekBar_importance_answer=0x7f090012;
-        public static final int seekBar_reminders_answer=0x7f090016;
-        public static final int textView_category=0x7f09000d;
-        public static final int textView_category_answer=0x7f09000f;
-        public static final int textView_color=0x7f09000e;
-        public static final int textView_due=0x7f09000a;
-        public static final int textView_due_answer=0x7f09001a;
-        public static final int textView_importance=0x7f090011;
-        public static final int textView_importance_highlabel=0x7f090014;
-        public static final int textView_importance_lowlabel=0x7f090013;
-        public static final int textView_name=0x7f090009;
-        public static final int textView_name_answer=0x7f090019;
-        public static final int textView_reminders=0x7f090015;
-        public static final int textView_reminders_highlabel=0x7f090018;
-        public static final int textView_reminders_lowlabel=0x7f090017;
-        public static final int textView_timerequired=0x7f09000b;
-        public static final int textView_timerequired_answer=0x7f09000c;
+        public static final int action_settings=0x7f090023;
+        public static final int autoCompleteTextView_requestfromspecificfriend=0x7f090007;
+        public static final int avatar=0x7f090009;
+        public static final int button_completed=0x7f09000a;
+        public static final int button_delete=0x7f090010;
+        public static final int button_edit=0x7f09000f;
+        public static final int button_ihaveneedhabits=0x7f09000e;
+        public static final int button_ineedcoachinghelp=0x7f09000d;
+        public static final int button_randomperson=0x7f090001;
+        public static final int button_request=0x7f090008;
+        public static final int button_toolittletodo=0x7f09000c;
+        public static final int button_toomuchtodo=0x7f09000b;
+        public static final int imageView1=0x7f090000;
+        public static final int imageView_color=0x7f090018;
+        public static final int seekBar_importance_answer=0x7f09001a;
+        public static final int seekBar_reminders_answer=0x7f09001e;
+        public static final int textView1=0x7f090002;
+        public static final int textView2=0x7f090005;
+        public static final int textView_category=0x7f090015;
+        public static final int textView_category_answer=0x7f090017;
+        public static final int textView_color=0x7f090016;
+        public static final int textView_due=0x7f090012;
+        public static final int textView_due_answer=0x7f090022;
+        public static final int textView_friendsavailable=0x7f090004;
+        public static final int textView_importance=0x7f090019;
+        public static final int textView_importance_highlabel=0x7f09001c;
+        public static final int textView_importance_lowlabel=0x7f09001b;
+        public static final int textView_name=0x7f090011;
+        public static final int textView_name_answer=0x7f090021;
+        public static final int textView_previousmotivators=0x7f090003;
+        public static final int textView_reminders=0x7f09001d;
+        public static final int textView_reminders_highlabel=0x7f090020;
+        public static final int textView_reminders_lowlabel=0x7f09001f;
+        public static final int textView_requestfromspecificfriend=0x7f090006;
+        public static final int textView_timerequired=0x7f090013;
+        public static final int textView_timerequired_answer=0x7f090014;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int activity_motivate_me=0x7f030001;
-        public static final int activity_task=0x7f030002;
+        public static final int activity_im_motivational=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int activity_motivate_me=0x7f030002;
+        public static final int activity_task=0x7f030003;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
-        public static final int motivate_me=0x7f080001;
-        public static final int task=0x7f080002;
+        public static final int im_motivational=0x7f080000;
+        public static final int main=0x7f080001;
+        public static final int motivate_me=0x7f080002;
+        public static final int task=0x7f080003;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -89,6 +99,7 @@ public final class R {
     	 				never
 
 
+
     
          */
         public static final int app_name=0x7f050000;
@@ -101,6 +112,12 @@ public final class R {
         public static final int category_shopping=0x7f05002a;
         public static final int category_social=0x7f050029;
         public static final int hello_world=0x7f050002;
+        public static final int immotivational_autocomplete_friendsname=0x7f050037;
+        public static final int immotivational_button_randomperson=0x7f050033;
+        public static final int immotivational_button_request=0x7f050038;
+        public static final int immotivational_friendsavailablecolon=0x7f050035;
+        public static final int immotivational_previousmotivatorscolon=0x7f050034;
+        public static final int immotivational_requestfromspecificfriendcolon=0x7f050036;
         public static final int mome_button_motivateme=0x7f05000d;
         public static final int mome_dialog_duedate=0x7f05000c;
         public static final int mome_dialog_welcome=0x7f05000b;
@@ -125,6 +142,7 @@ public final class R {
         public static final int task_notecolon=0x7f050021;
         public static final int task_reminderscolon=0x7f05001c;
         public static final int task_timerequiredcolon=0x7f050018;
+        public static final int title_activity_im_motivational=0x7f050032;
         public static final int title_activity_motivate_me=0x7f05002e;
         public static final int title_activity_task=0x7f05002c;
         public static final int title_addedittask=0x7f050007;

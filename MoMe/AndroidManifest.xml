@@ -30,6 +30,10 @@
             android:name="com.example.mome.MotivateMe"
             android:label="@string/title_activity_motivate_me" >
         </activity>
+        <activity
+            android:name="com.example.mome.ImMotivational"
+            android:label="@string/title_activity_im_motivational" >
+        </activity>
     </application>
 
 </manifest>
