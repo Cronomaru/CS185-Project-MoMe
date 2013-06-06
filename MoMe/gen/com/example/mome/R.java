@@ -30,7 +30,7 @@ public final class R {
     }
     public static final class id {
         public static final int ScrollView1=0x7f090000;
-        public static final int action_settings=0x7f090036;
+        public static final int action_settings=0x7f090039;
         public static final int autoCompleteTextView_requestfromspecificfriend=0x7f090022;
         public static final int avatar=0x7f090017;
         public static final int button_anyone=0x7f090016;
@@ -47,17 +47,20 @@ public final class R {
         public static final int button_toomuchtodo=0x7f090019;
         public static final int checkBox_duedate=0x7f090005;
         public static final int checkBox_time=0x7f090007;
+        public static final int childItem=0x7f090037;
         public static final int datePicker_duedate=0x7f090006;
         public static final int editText_days=0x7f09000a;
         public static final int editText_hours=0x7f09000b;
         public static final int editText_minutes=0x7f09000c;
         public static final int editText_nameoftask=0x7f090004;
+        public static final int heading=0x7f090038;
         public static final int imageView1=0x7f09000d;
         public static final int imageView_color=0x7f09002b;
         public static final int imageView_socialprompt=0x7f090018;
         public static final int ratingBar_yourcurrentrating=0x7f090012;
         public static final int seekBar_importance_answer=0x7f09002d;
         public static final int seekBar_reminders_answer=0x7f090031;
+        public static final int sequence=0x7f090036;
         public static final int textView2=0x7f090020;
         public static final int textView_category=0x7f090028;
         public static final int textView_category_answer=0x7f09002a;
@@ -95,7 +98,9 @@ public final class R {
         public static final int activity_motivate_me=0x7f030006;
         public static final int activity_social=0x7f030007;
         public static final int activity_task=0x7f030008;
-        public static final int to_do_list=0x7f030009;
+        public static final int child_row=0x7f030009;
+        public static final int group_row=0x7f03000a;
+        public static final int to_do_list=0x7f03000b;
     }
     public static final class menu {
         public static final int add_task=0x7f080000;
