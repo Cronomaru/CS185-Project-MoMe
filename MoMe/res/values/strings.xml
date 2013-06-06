@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- By: May Camp
+    <!--
+         By: May Camp
          can't find: addedittask_notecolon ?
     	 just use  : task_notecolon 
     	 
@@ -13,7 +14,7 @@
     	 				notatall
     	 				extremely
     	 				always
-    	 				never
+    	 				never
     -->
 
     <string name="app_name">MoMe</string>
@@ -36,7 +37,7 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <string name="mome_dialog_duedate">Your most recent due date is in 8 hours! Perhaps you should work on that task?</string>
     <string name="mome_button_motivateme">Motivate Me!</string>
     <string name="motivateme_dialog_welcome">What type of motivation do you need?</string>
-    <string name="motivateme_button_todolist">To Do List Motivation!</string>
+    <string name="motivateme_button_todolist">Too Much To Do!</string>
     <string name="todolist_dialog_welcome">Making a To Do List would help organize what you have to do.</string>
     <string name="todolist_button_addtask">Add Task</string>
     <string name="todolist_button_expand">Expand</string>
@@ -67,5 +68,9 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <string name="category_habits">Habits</string>
     <string name="title_activity_task">Task</string>
     <string name="task_button_delete">Delete</string>
+    <string name="title_activity_motivate_me">MotivateMe</string>
+    <string name="motivateme_button_suggestionlist">Too Little To Do!</string>
+    <string name="motivateme_button_social">I Need Coaching/Help!</string>
+    <string name="motivateme_button_habits">I Have/Need Habits!</string>
 
 </resources>

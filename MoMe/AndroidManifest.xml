@@ -26,6 +26,10 @@
             android:name="com.example.mome.Task"
             android:label="@string/title_activity_task" >
         </activity>
+        <activity
+            android:name="com.example.mome.MotivateMe"
+            android:label="@string/title_activity_motivate_me" >
+        </activity>
     </application>
 
 </manifest>
