@@ -1,5 +1,4 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ScrollView1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,38 +6,17 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".AddTask" >
+    tools:context=".AddTask" xmlns:android="http://schemas.android.com/apk/res/android">
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
-
-        <Button
-            android:id="@+id/button_completed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/task_button_completed" />
-
-        <Button
-            android:id="@+id/button_edit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/button_completed"
-            android:text="@string/task_button_edit" />
-
-        <Button
-            android:id="@+id/button_delete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/button_edit"
-            android:text="@string/task_button_delete" />
 
         <EditText
             android:id="@+id/editText_nameoftask"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/button_completed"
             android:ems="10"
             android:text="@string/addtask_nameoftask" />
 
@@ -77,7 +55,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/timePicker_time"
             android:text="@string/addtask_timerequiredtofinishcolon"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editText_days"
@@ -110,6 +89,164 @@
             android:ems="4"
             android:inputType="number"
             android:text="@string/addtask_minutes" />
+
+        <TextView
+            android:id="@+id/textView_importance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_days"
+            android:text="@string/task_importancecolon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBar_importance_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_importance" />
+
+        <TextView
+            android:id="@+id/textView_importance_lowlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/seekBar_importance_answer"
+            android:layout_below="@id/seekBar_importance_answer"
+            android:text="@string/task_notatall"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView_importance_highlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/seekBar_importance_answer"
+            android:layout_below="@id/seekBar_importance_answer"
+            android:text="@string/task_extremely"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView_reminders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_importance_lowlabel"
+            android:text="@string/task_reminderscolon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBar_reminders_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_reminders" />
+
+        <TextView
+            android:id="@+id/textView_reminders_lowlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/seekBar_reminders_answer"
+            android:layout_below="@id/seekBar_reminders_answer"
+            android:text="@string/task_never"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView_reminders_highlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/seekBar_reminders_answer"
+            android:layout_below="@id/seekBar_reminders_answer"
+            android:text="@string/task_always"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView_exactreminders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_reminders_lowlabel"
+            android:text="@string/addtask_exactremindersquestion"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_exactremindertime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_exactreminders"
+            android:layout_marginTop="16dp"
+            android:ems="2"
+            android:inputType="number" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_timeunit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_exactreminders"
+            android:layout_toRightOf="@id/editText_exactremindertime" >
+
+            <RadioButton
+                android:id="@+id/radio_minutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/addtask_minutes" />
+
+            <RadioButton
+                android:id="@+id/radio_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addtask_hours" />
+
+            <RadioButton
+                android:id="@+id/radio_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addtask_days" />
+
+            <RadioButton
+                android:id="@+id/radio_weeks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addtask_weeks" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView_beforeduedate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/editText_exactremindertime"
+            android:layout_toRightOf="@id/radioGroup_timeunit"
+            android:text="@string/addtask_beforeduedate"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_addreminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_beforeduedate"
+            android:layout_toRightOf="@id/radioGroup_timeunit"
+            android:text="@string/addtask_button_addreminder" />
+
+        <TextView
+            android:id="@+id/textView_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioGroup_timeunit"
+            android:text="@string/addtask_notescolon"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText_notes_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_notes"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/button_addtask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_notes_answer"
+            android:text="@string/addtask_button_addtask" />
 
     </RelativeLayout>
 
