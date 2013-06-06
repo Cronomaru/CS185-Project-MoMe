@@ -17,7 +17,7 @@
         android:src="@drawable/logo" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/editText_category"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/main_username"
@@ -41,9 +41,12 @@
         android:text="@string/main_login" />
 
     <TextView
+        android:paddingTop="50dp"
+        android:paddingBottom="20dp"
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="@string/main_or" />
 
     <Button
