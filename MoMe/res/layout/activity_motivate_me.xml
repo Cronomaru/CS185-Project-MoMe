@@ -11,7 +11,7 @@
     tools:context=".MotivateMe" >
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/imageView_socialprompt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -23,7 +23,7 @@
         android:id="@+id/button_toomuchtodo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView1"
+        android:layout_below="@+id/imageView_socialprompt"
         android:layout_centerHorizontal="true"
         android:text="@string/motivateme_button_todolist" />
 

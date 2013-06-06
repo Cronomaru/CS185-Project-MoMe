@@ -34,6 +34,10 @@
             android:name="com.example.mome.ImMotivational"
             android:label="@string/title_activity_im_motivational" >
         </activity>
+        <activity
+            android:name="com.example.mome.Social"
+            android:label="@string/title_activity_social" >
+        </activity>
     </application>
 
 </manifest>

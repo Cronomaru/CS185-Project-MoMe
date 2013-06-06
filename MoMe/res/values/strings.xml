@@ -14,7 +14,7 @@
     	 				notatall
     	 				extremely
     	 				always
-    	 				never
+    	 				never
     -->
 
     <string name="app_name">MoMe</string>
@@ -79,5 +79,11 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <string name="immotivational_requestfromspecificfriendcolon">Request From Specific Friend:</string>
     <string name="immotivational_autocomplete_friendsname">Enter Friend\'s Name</string>
     <string name="immotivational_button_request">Request</string>
+    <string name="title_activity_social">Social</string>
+    <string name="immotivational_introcolon">Intro:</string>
+    <string name="immotivational_introdefault">How can I help you?</string>
+    <string name="immotivational_button_setintro">Set Intro</string>
+    <string name="immotivational_yourcurrentratingcolon">Your Current Rating:</string>
+    <string name="immotivational_yourmotivateescolon">Your Motivatees:</string>
 
 </resources>

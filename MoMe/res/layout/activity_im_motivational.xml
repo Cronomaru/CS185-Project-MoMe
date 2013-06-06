@@ -12,27 +12,63 @@
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:src="@drawable/ic_launcher" />
 
-    <Button
-        android:id="@+id/button_randomperson"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView_intro"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:text="@string/immotivational_button_randomperson" />
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:text="@string/immotivational_introcolon"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView_previousmotivators"
+        android:id="@+id/textView_introanswer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView1"
+        android:layout_toRightOf="@+id/textView_intro"
+        android:text="@string/immotivational_introdefault"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button_setintro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_introanswer"
         android:layout_centerHorizontal="true"
-        android:text="@string/immotivational_previousmotivatorscolon"
+        android:text="@string/immotivational_button_setintro" />
+
+    <TextView
+        android:id="@+id/textView_yourcurrentrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button_setintro"
+        android:text="@string/immotivational_yourcurrentratingcolon"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_yourcurrentrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_yourcurrentrating"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView_yourmotivatees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ratingBar_yourcurrentrating"
+        android:text="@string/immotivational_yourmotivateescolon"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textStyle="bold" />
 
@@ -40,58 +76,9 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button_randomperson"
-        android:layout_below="@+id/textView_previousmotivators"
-        android:text="ListView for &quot;Previous Motivators&quot; Goes Here, in scrolling thing?"
+        android:layout_below="@+id/textView_yourmotivatees"
+        android:layout_centerHorizontal="true"
+        android:text="ListView of &quot;your motivatees&quot; goes here, with scrolling?"
         android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/textView_friendsavailable"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button_randomperson"
-        android:layout_centerHorizontal="true"
-        android:text="@string/immotivational_friendsavailablecolon"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button_randomperson"
-        android:layout_below="@+id/textView_friendsavailable"
-        android:text="ListView for &quot;Friends Available&quot; goes here, in scrolling thing?"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/textView_requestfromspecificfriend"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:text="@string/immotivational_requestfromspecificfriendcolon"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textStyle="bold" />
-
-    <AutoCompleteTextView
-        android:id="@+id/autoCompleteTextView_requestfromspecificfriend"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView_requestfromspecificfriend"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:text="@string/immotivational_autocomplete_friendsname" >
-
-        <requestFocus />
-    </AutoCompleteTextView>
-
-    <Button
-        android:id="@+id/button_request"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/autoCompleteTextView_requestfromspecificfriend"
-        android:text="@string/immotivational_button_request" />
 
 </RelativeLayout>
