@@ -47,13 +47,12 @@
             android:label="@string/title_activity_chat" >
         </activity>
         <activity
-<<<<<<< HEAD
             android:name="com.example.mome.LoginActivity"
             android:label="@string/title_activity_login" >
-=======
+        </activity>
+        <activity
             android:name="com.example.mome.AddTask"
             android:label="@string/title_activity_add_task" >
->>>>>>> 3a7ba76386952722d1ae85cd9a96b5d677bd3e63
         </activity>
     </application>
 
