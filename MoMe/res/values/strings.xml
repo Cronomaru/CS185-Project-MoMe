@@ -105,4 +105,6 @@ If you wait for perfect conditions, you will never get anything done.</string-a
 
     <string name="title_activity_login">MainActivity</string>
 
+    <string name="addtask_minutes">Minutes</string>
+
 </resources>

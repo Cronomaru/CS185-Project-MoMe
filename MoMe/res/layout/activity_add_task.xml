@@ -84,7 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView_timerequiredtofinish"
-            android:ems="10"
+            android:ems="4"
             android:inputType="number"
             android:text="@string/addtask_days" >
 
@@ -97,9 +97,20 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/textView_timerequiredtofinish"
             android:layout_toRightOf="@id/editText_days"
-            android:ems="10"
+            android:ems="4"
             android:inputType="number"
             android:text="@string/addtask_hours" />
+
+        <EditText
+            android:id="@+id/editText_minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_timerequiredtofinish"
+            android:layout_toRightOf="@id/editText_hours"
+            android:ems="4"
+            android:inputType="number"
+            android:text="@string/addtask_minutes" />
+
     </RelativeLayout>
 
 </ScrollView>
