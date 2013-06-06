@@ -33,10 +33,11 @@ public final class R {
     }
     public static final class id {
         public static final int ScrollView1=0x7f090000;
-        public static final int action_settings=0x7f09004d;
+        public static final int action_settings=0x7f09004e;
         public static final int add=0x7f09004b;
         public static final int autoCompleteTextView_requestfromspecificfriend=0x7f090039;
         public static final int avatar=0x7f090028;
+        public static final int avatarToDo=0x7f09004a;
         public static final int button1=0x7f09002b;
         public static final int button2=0x7f09002d;
         public static final int button_addreminder=0x7f09001a;
@@ -79,7 +80,7 @@ public final class R {
         public static final int seekBar_importance_answer=0x7f09000b;
         public static final int seekBar_reminders_answer=0x7f09000f;
         public static final int sequence=0x7f090047;
-        public static final int spacingContainer=0x7f09004a;
+        public static final int spacingContainer=0x7f09004d;
         public static final int textView1=0x7f09002c;
         public static final int textView2=0x7f090037;
         public static final int textView_beforeduedate=0x7f090019;
