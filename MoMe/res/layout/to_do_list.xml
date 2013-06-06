@@ -7,12 +7,12 @@
     android:orientation="vertical" >
 
     <ImageView
-        android:id="@+id/avatar"
+        android:id="@+id/avatarToDo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/avatar_todo_suggestion"
         android:contentDescription="G"
-        android:scaleType="fitStart" />
+        android:scaleType="fitStart"
+        android:src="@drawable/avatar_todo_suggestion" />
 
     <Button
         android:id="@+id/add"
