@@ -93,5 +93,9 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <string name="addtask_nameoftask">Name of Task</string>
     <string name="addtask_duedatequestion">Due Date?</string>
     <string name="addtask_timequestion">Time?</string>
+    <string name="main_username">Username</string>
+    <string name="main_password">Password</string>
+    <string name="main_login">Login</string>
+    <string name="main_signup">Sign up</string>
 
 </resources>

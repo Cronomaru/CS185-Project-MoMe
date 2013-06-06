@@ -75,11 +75,21 @@
             android:layout_centerVertical="true" />
 
         <NumberPicker
-            android:id="@+id/numberPicker1"
+            android:id="@+id/numberPicker_days"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignRight="@+id/editText_nameoftask"
             android:layout_below="@+id/editText_nameoftask" />
+
+        <TextView
+            android:id="@+id/textView_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkBox_time"
+            android:layout_alignBottom="@+id/checkBox_time"
+            android:layout_toLeftOf="@+id/numberPicker_days"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
     </RelativeLayout>
 
