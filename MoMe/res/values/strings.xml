@@ -107,4 +107,17 @@ If you wait for perfect conditions, you will never get anything done.</string-a
 
     <string name="addtask_minutes">Minutes</string>
 
+    <string name="addtask_exactremindersquestion">Exact Reminders?</string>
+
+    <string name="addtask_weeks">Weeks</string>
+
+    <string name="addtask_beforeduedate">Before Due Date</string>
+
+    <string name="addtask_button_addreminder">Add Reminder</string>
+
+    <string name="addtask_notescolon">"Notes: "</string>
+
+    <string name="addtask_button_addtask">Add Task</string>
+    <string name="main_or">Or</string>
+
 </resources>
