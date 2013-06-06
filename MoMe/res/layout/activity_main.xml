@@ -24,4 +24,10 @@
         android:fontFamily="Sans"
         android:text="@string/title_motivateme" />
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I&apos;m Motivated" />
+
 </LinearLayout>
