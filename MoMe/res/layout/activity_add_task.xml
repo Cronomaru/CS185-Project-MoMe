@@ -89,12 +89,20 @@
             android:ems="4"
             android:inputType="number"
             android:text="@string/addtask_minutes" />
+        
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_days"
+            android:ems="10"
+            android:text="@string/addtask_entercategory" />
 
         <TextView
             android:id="@+id/textView_importance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/editText_days"
+            android:layout_below="@id/autoCompleteTextView_category"
             android:text="@string/task_importancecolon"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
@@ -247,6 +255,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/editText_notes_answer"
             android:text="@string/addtask_button_addtask" />
+
 
     </RelativeLayout>
 
