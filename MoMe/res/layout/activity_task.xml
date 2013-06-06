@@ -1,3 +1,5 @@
+<!-- By: May Camp -->
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,32 +15,33 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/button_completed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/task_button_completed" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button_edit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/button1"
+            android:layout_toRightOf="@id/button_completed"
             android:text="@string/task_button_edit" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/button_delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/button2"
+            android:layout_toRightOf="@id/button_edit"
             android:text="@string/task_button_delete" />
 
         <TextView
             android:id="@+id/textView_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/button1"
+            android:layout_below="@id/button_completed"
             android:text="@string/task_namecolon"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView_due"
@@ -46,7 +49,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/textView_name"
             android:text="@string/task_duecolon"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView_timerequired"
@@ -54,39 +58,142 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/textView_due"
             android:text="@string/task_timerequiredcolon"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView_timerequired_answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView_timerequired"
+            android:layout_below="@+id/textView_timerequired"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <TextView
+            android:id="@+id/textView_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_timerequired_answer"
             android:text="@string/task_categorycolon"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textView_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView2"
+            android:layout_below="@id/textView_category"
             android:text="@string/task_colorcolon"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textView_category_answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView3"
+            android:layout_alignBaseline="@+id/textView_category"
+            android:layout_alignBottom="@+id/textView_category"
+            android:layout_toRightOf="@+id/textView_category"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <ImageView
+            android:id="@+id/imageView_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView_importance"
+            android:layout_alignRight="@+id/textView_category"
+            android:layout_below="@id/textView_category_answer"
+            android:layout_toRightOf="@id/textView_color"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView_importance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_color"
             android:text="@string/task_importancecolon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBar_importance_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_importance" />
+
+        <TextView
+            android:id="@+id/textView_importance_lowlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/seekBar_importance_answer"
+            android:layout_below="@id/seekBar_importance_answer"
+            android:text="@string/task_notatall"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView_importance_highlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/seekBar_importance_answer"
+            android:layout_below="@id/seekBar_importance_answer"
+            android:text="@string/task_extremely"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView_reminders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_importance_lowlabel"
+            android:text="@string/task_reminderscolon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBar_reminders_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_reminders" />
+
+        <TextView
+            android:id="@+id/textView_reminders_lowlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/seekBar_reminders_answer"
+            android:layout_below="@id/seekBar_reminders_answer"
+            android:text="@string/task_never"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView_reminders_highlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/seekBar_reminders_answer"
+            android:layout_below="@id/seekBar_reminders_answer"
+            android:text="@string/task_always"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView_name_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView_name"
+            android:layout_alignBottom="@+id/textView_name"
+            android:layout_toRightOf="@+id/textView_name"
+            android:text="Medium Text"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/textView_due_answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView4"
-            android:text="@string/task_reminderscolon"
+            android:layout_alignBaseline="@+id/textView_due"
+            android:layout_alignBottom="@+id/textView_due"
+            android:layout_toRightOf="@+id/textView_due"
+            android:text="Medium Text"
             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        
 
     </RelativeLayout>
 

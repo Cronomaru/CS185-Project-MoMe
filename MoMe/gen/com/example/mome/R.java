@@ -29,18 +29,29 @@ public final class R {
         public static final int logo_idea=0x7f020002;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000b;
+        public static final int action_settings=0x7f090016;
         public static final int avatar=0x7f090000;
-        public static final int button1=0x7f090001;
-        public static final int button2=0x7f090002;
-        public static final int button3=0x7f090003;
-        public static final int textView1=0x7f09000a;
-        public static final int textView2=0x7f090007;
-        public static final int textView3=0x7f090008;
-        public static final int textView4=0x7f090009;
+        public static final int button_completed=0x7f090001;
+        public static final int button_delete=0x7f090003;
+        public static final int button_edit=0x7f090002;
+        public static final int imageView_color=0x7f09000b;
+        public static final int seekBar_importance_answer=0x7f09000d;
+        public static final int seekBar_reminders_answer=0x7f090011;
+        public static final int textView_category=0x7f090008;
+        public static final int textView_category_answer=0x7f09000a;
+        public static final int textView_color=0x7f090009;
         public static final int textView_due=0x7f090005;
+        public static final int textView_due_answer=0x7f090015;
+        public static final int textView_importance=0x7f09000c;
+        public static final int textView_importance_highlabel=0x7f09000f;
+        public static final int textView_importance_lowlabel=0x7f09000e;
         public static final int textView_name=0x7f090004;
+        public static final int textView_name_answer=0x7f090014;
+        public static final int textView_reminders=0x7f090010;
+        public static final int textView_reminders_highlabel=0x7f090013;
+        public static final int textView_reminders_lowlabel=0x7f090012;
         public static final int textView_timerequired=0x7f090006;
+        public static final int textView_timerequired_answer=0x7f090007;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -55,7 +66,7 @@ public final class R {
         public static final int addedittask_duedatequestion=0x7f050023;
         public static final int addedittask_textfield_nameoftask=0x7f050022;
         public static final int addedittask_timequestion=0x7f050024;
-        /** 
+        /**  By: May Camp
          can't find: addedittask_notecolon ?
     	 just use  : task_notecolon 
     	 
