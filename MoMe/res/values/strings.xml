@@ -97,5 +97,10 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <string name="main_password">Password</string>
     <string name="main_login">Login</string>
     <string name="main_signup">Sign up</string>
+    <string name="addtask_dayscolon">Days:</string>
+    <string name="addtask_days">Days</string>
+    <string name="addtask_timerequiredtofinishcolon">"Time Required to Finish: "</string>
+    <string name="addtask_hours">Hours</string>
+    <string name="title_activity_login">MainActivity</string>
 
 </resources>

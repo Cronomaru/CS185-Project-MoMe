@@ -74,22 +74,35 @@
             android:layout_centerHorizontal="false"
             android:layout_centerVertical="true" />
 
-        <NumberPicker
-            android:id="@+id/numberPicker_days"
+        <EditText
+            android:id="@+id/editText_days"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/editText_nameoftask"
-            android:layout_below="@+id/editText_nameoftask" />
+            android:layout_below="@id/textView_timerequiredtofinish"
+            android:ems="10"
+            android:inputType="number"
+            android:text="@string/addtask_days" >
+
+            <requestFocus />
+        </EditText>
 
         <TextView
-            android:id="@+id/textView_days"
+            android:id="@+id/textView_timerequiredtofinish"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/checkBox_time"
-            android:layout_alignBottom="@+id/checkBox_time"
-            android:layout_toLeftOf="@+id/numberPicker_days"
-            android:text="Medium Text"
+            android:layout_below="@id/timePicker_time"
+            android:text="@string/addtask_timerequiredtofinishcolon"
             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_timerequiredtofinish"
+            android:layout_toRightOf="@id/editText_days"
+            android:ems="10"
+            android:inputType="number"
+            android:text="@string/addtask_hours" />
 
     </RelativeLayout>
 

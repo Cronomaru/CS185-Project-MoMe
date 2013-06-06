@@ -47,11 +47,11 @@ public final class R {
         public static final int checkBox_duedate=0x7f090004;
         public static final int checkBox_time=0x7f090006;
         public static final int datePicker_duedate=0x7f090005;
+        public static final int editText1=0x7f090008;
         public static final int editText_nameoftask=0x7f090003;
         public static final int imageView1=0x7f09000a;
         public static final int imageView_color=0x7f090028;
         public static final int imageView_socialprompt=0x7f090015;
-        public static final int numberPicker_days=0x7f090008;
         public static final int ratingBar_yourcurrentrating=0x7f09000f;
         public static final int seekBar_importance_answer=0x7f09002a;
         public static final int seekBar_reminders_answer=0x7f09002e;
@@ -59,7 +59,6 @@ public final class R {
         public static final int textView_category=0x7f090025;
         public static final int textView_category_answer=0x7f090027;
         public static final int textView_color=0x7f090026;
-        public static final int textView_days=0x7f090009;
         public static final int textView_due=0x7f090022;
         public static final int textView_due_answer=0x7f090032;
         public static final int textView_duedate=0x7f090011;
@@ -78,6 +77,7 @@ public final class R {
         public static final int textView_requestfromspecificfriend=0x7f09001e;
         public static final int textView_timerequired=0x7f090023;
         public static final int textView_timerequired_answer=0x7f090024;
+        public static final int textView_timerequiredtofinish=0x7f090009;
         public static final int textView_yourcurrentrating=0x7f09000e;
         public static final int textView_yourmotivatees=0x7f090010;
         public static final int timePicker_time=0x7f090007;
@@ -91,6 +91,7 @@ public final class R {
         public static final int activity_motivate_me=0x7f030005;
         public static final int activity_social=0x7f030006;
         public static final int activity_task=0x7f030007;
+        public static final int to_do_list=0x7f030008;
     }
     public static final class menu {
         public static final int add_task=0x7f080000;
@@ -107,9 +108,13 @@ public final class R {
         public static final int addedittask_duedatequestion=0x7f050023;
         public static final int addedittask_textfield_nameoftask=0x7f050022;
         public static final int addedittask_timequestion=0x7f050024;
+        public static final int addtask_days=0x7f05004c;
+        public static final int addtask_dayscolon=0x7f05004b;
         public static final int addtask_duedatequestion=0x7f050045;
+        public static final int addtask_hours=0x7f05004e;
         public static final int addtask_nameoftask=0x7f050044;
         public static final int addtask_timequestion=0x7f050046;
+        public static final int addtask_timerequiredtofinishcolon=0x7f05004d;
         /** 
          By: May Camp
          can't find: addedittask_notecolon ?
