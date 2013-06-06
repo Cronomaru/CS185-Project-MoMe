@@ -30,6 +30,7 @@ public final class R {
     }
     public static final class id {
         public static final int ScrollView1=0x7f090000;
+<<<<<<< HEAD
         public static final int action_settings=0x7f090042;
         public static final int autoCompleteTextView_requestfromspecificfriend=0x7f090034;
         public static final int avatar=0x7f090028;
@@ -96,6 +97,65 @@ public final class R {
         public static final int textView_yourcurrentrating=0x7f090022;
         public static final int textView_yourmotivatees=0x7f090024;
         public static final int timePicker_time=0x7f090005;
+=======
+        public static final int action_settings=0x7f090039;
+        public static final int autoCompleteTextView_requestfromspecificfriend=0x7f090022;
+        public static final int avatar=0x7f090017;
+        public static final int button_anyone=0x7f090016;
+        public static final int button_completed=0x7f090001;
+        public static final int button_delete=0x7f090003;
+        public static final int button_edit=0x7f090002;
+        public static final int button_friendsonly=0x7f090015;
+        public static final int button_ihaveneedhabits=0x7f09001c;
+        public static final int button_ineedcoachinghelp=0x7f09001b;
+        public static final int button_randomperson=0x7f09001d;
+        public static final int button_request=0x7f090023;
+        public static final int button_setintro=0x7f090010;
+        public static final int button_toolittletodo=0x7f09001a;
+        public static final int button_toomuchtodo=0x7f090019;
+        public static final int checkBox_duedate=0x7f090005;
+        public static final int checkBox_time=0x7f090007;
+        public static final int childItem=0x7f090037;
+        public static final int datePicker_duedate=0x7f090006;
+        public static final int editText_days=0x7f09000a;
+        public static final int editText_hours=0x7f09000b;
+        public static final int editText_minutes=0x7f09000c;
+        public static final int editText_nameoftask=0x7f090004;
+        public static final int heading=0x7f090038;
+        public static final int imageView1=0x7f09000d;
+        public static final int imageView_color=0x7f09002b;
+        public static final int imageView_socialprompt=0x7f090018;
+        public static final int ratingBar_yourcurrentrating=0x7f090012;
+        public static final int seekBar_importance_answer=0x7f09002d;
+        public static final int seekBar_reminders_answer=0x7f090031;
+        public static final int sequence=0x7f090036;
+        public static final int textView2=0x7f090020;
+        public static final int textView_category=0x7f090028;
+        public static final int textView_category_answer=0x7f09002a;
+        public static final int textView_color=0x7f090029;
+        public static final int textView_due=0x7f090025;
+        public static final int textView_due_answer=0x7f090035;
+        public static final int textView_duedate=0x7f090014;
+        public static final int textView_friendsavailable=0x7f09001f;
+        public static final int textView_importance=0x7f09002c;
+        public static final int textView_importance_highlabel=0x7f09002f;
+        public static final int textView_importance_lowlabel=0x7f09002e;
+        public static final int textView_intro=0x7f09000e;
+        public static final int textView_introanswer=0x7f09000f;
+        public static final int textView_name=0x7f090024;
+        public static final int textView_name_answer=0x7f090034;
+        public static final int textView_previousmotivators=0x7f09001e;
+        public static final int textView_reminders=0x7f090030;
+        public static final int textView_reminders_highlabel=0x7f090033;
+        public static final int textView_reminders_lowlabel=0x7f090032;
+        public static final int textView_requestfromspecificfriend=0x7f090021;
+        public static final int textView_timerequired=0x7f090026;
+        public static final int textView_timerequired_answer=0x7f090027;
+        public static final int textView_timerequiredtofinish=0x7f090009;
+        public static final int textView_yourcurrentrating=0x7f090011;
+        public static final int textView_yourmotivatees=0x7f090013;
+        public static final int timePicker_time=0x7f090008;
+>>>>>>> 65ac5f70bbb710609cc0cac62784d624d859b74e
     }
     public static final class layout {
         public static final int activity_add_task=0x7f030000;
@@ -107,7 +167,9 @@ public final class R {
         public static final int activity_motivate_me=0x7f030006;
         public static final int activity_social=0x7f030007;
         public static final int activity_task=0x7f030008;
-        public static final int to_do_list=0x7f030009;
+        public static final int child_row=0x7f030009;
+        public static final int group_row=0x7f03000a;
+        public static final int to_do_list=0x7f03000b;
     }
     public static final class menu {
         public static final int add_task=0x7f080000;

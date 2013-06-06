@@ -1,8 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="top"
     android:orientation="vertical" >
-    
 
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/spacingContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="match_parent"
+            android:layout_height="216dp"
+            android:adjustViewBounds="false"
+            android:background="@drawable/avatar_owl_01"
+            android:contentDescription="G"
+            android:scaleType="fitXY" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/snow"
+            android:padding="5dp"
+            android:text="@string/to_do_list"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <ExpandableListView
+            android:id="@+id/myList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ExpandableListView>
+    </LinearLayout>
+
+</RelativeLayout>
