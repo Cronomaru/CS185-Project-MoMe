@@ -46,6 +46,10 @@
             android:name="com.example.mome.Chat"
             android:label="@string/title_activity_chat" >
         </activity>
+        <activity
+            android:name="com.example.mome.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
     </application>
 
 </manifest>
