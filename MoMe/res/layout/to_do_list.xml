@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="216dp"
             android:adjustViewBounds="false"
-            android:background="@drawable/avatar_owl_01"
+            android:background="@drawable/avatar_todo_suggestion"
             android:contentDescription="G"
             android:scaleType="fitXY" />
 
@@ -25,16 +25,15 @@
             android:id="@+id/add"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="@string/add" />
+            android:text="temp" />
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:background="@color/snow"
             android:padding="5dp"
-            android:text="@string/to_do_list"
+            android:text="to_do_list"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
 

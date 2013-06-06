@@ -46,7 +46,7 @@ public class toDolist extends Activity implements OnClickListener{
   //get reference to the ExpandableListView
   myList = (ExpandableListView) findViewById(R.id.myList);
   //create the adapter by passing your ArrayList data
-  listAdapter = new MyListAdapter(toDoList.this, catList);
+  listAdapter = new MyListAdapter(toDolist.this, catList);
   //attach the adapter to the list
   myList.setAdapter(listAdapter);
  
