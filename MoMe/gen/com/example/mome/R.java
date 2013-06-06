@@ -248,6 +248,7 @@ public final class R {
         public static final int todolist_button_addtask=0x7f050011;
         public static final int todolist_button_expand=0x7f050012;
         public static final int todolist_dialog_welcome=0x7f050010;
+        public static final int todolist_label=0x7f050058;
     }
     public static final class style {
         /** 

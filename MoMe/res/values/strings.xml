@@ -119,5 +119,6 @@ If you wait for perfect conditions, you will never get anything done.</string-a
 
     <string name="addtask_button_addtask">Add Task</string>
     <string name="main_or">Or</string>
+    <string name="todolist_label">To Do List</string>
 
 </resources>
