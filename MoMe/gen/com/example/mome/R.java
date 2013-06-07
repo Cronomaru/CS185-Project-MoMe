@@ -33,8 +33,9 @@ public final class R {
         public static final int avatar_todo_suggestion_task=0x7f020006;
         public static final int avatar_welcome=0x7f020007;
         public static final int avatar_whatmotivation=0x7f020008;
-        public static final int ic_launcher=0x7f020009;
-        public static final int logo=0x7f02000a;
+        public static final int facebook_signup_button=0x7f020009;
+        public static final int ic_launcher=0x7f02000a;
+        public static final int logo=0x7f02000b;
     }
     public static final class id {
         public static final int ScrollView1=0x7f090000;
@@ -187,6 +188,7 @@ public final class R {
 
 
 
+
     
          */
         public static final int app_name=0x7f050000;
@@ -248,6 +250,7 @@ public final class R {
         public static final int title_activity_im_motivational_prompt=0x7f05003f;
         public static final int title_activity_login=0x7f05004f;
         public static final int title_activity_motivate_me=0x7f05002e;
+        public static final int title_activity_signup=0x7f05005d;
         public static final int title_activity_social=0x7f050039;
         public static final int title_activity_task=0x7f05002c;
         public static final int title_activity_to_do_list=0x7f05005b;
