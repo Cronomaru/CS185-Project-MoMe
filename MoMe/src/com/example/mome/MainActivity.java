@@ -37,7 +37,7 @@ public class MainActivity extends Activity implements OnClickListener{
         
         //add the buttons
         Button motivateMe = (Button) findViewById(R.id.button_completed);
-        Button imMotivated = (Button) findViewById(R.id.button1);
+        Button imMotivated = (Button) findViewById(R.id.button_signup);
   
         motivateMe.setOnClickListener(this);
         imMotivated.setOnClickListener(this);
@@ -67,7 +67,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	        startActivity(myIntent0);
 	        finish();
 	        break;
-		case R.id.button1:
+		case R.id.button_signup:
 			Intent myIntent1=new Intent(v.getContext(),ImMotivationalPrompt.class);
 	        startActivityForResult(myIntent1, 0);
 	        finish();
@@ -75,14 +75,18 @@ public class MainActivity extends Activity implements OnClickListener{
 	        
 		case R.id.avatar:
 			// change image
-			if (touches < 4 ){				
+			if (touches < picList.size() ){				
 				((ImageView) v).setImageResource(picList.get(touches));
 				touches++;
 			}else{
 				touches = 0;
-				((ImageView) v).setImageResource(R.drawable.avatar_welcome);
+				((ImageView) v).setImageResource(picList.get(touches));
 			}
 			
+				
+				
+				
+				
 			break;
 	            
 		}

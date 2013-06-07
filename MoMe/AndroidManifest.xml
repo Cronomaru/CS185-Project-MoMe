@@ -58,10 +58,6 @@
             android:name="com.example.mome.ToDoList"
             android:label="@string/title_activity_to_do_list" >
         </activity>
-        <activity
-            android:name="com.example.mome.SignupActivity"
-            android:label="@string/title_activity_signup" >
-        </activity>
     </application>
 
 </manifest>
