@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 
@@ -37,7 +38,15 @@ public class AddTask extends Activity {
 	
 		String catagory = Catagory.getText().toString() ; 
 		String task = Task.getText().toString() ;
-		String duedate = month + "/" + day + "/" + year;
+		
+		String duedate = "";
+		CheckBox checkBoxDueDate = (CheckBox) findViewById(R.id.checkBox_duedate);
+        if (checkBoxDueDate.isChecked()) {
+            checkBoxDueDate.setChecked(false);
+            duedate = month + "/" + day + "/" + year;
+        }
+		
+		
 	
 		Intent data = new Intent(this, ToDoList.class);
 	
