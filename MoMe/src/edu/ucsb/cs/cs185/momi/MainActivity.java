@@ -3,7 +3,7 @@ package edu.ucsb.cs.cs185.momi;
 //test push
 
 
-import com.example.mome.R;
+import edu.ucsb.cs.cs185.momi.R;
 
 import android.os.Bundle;
 import android.app.Activity;

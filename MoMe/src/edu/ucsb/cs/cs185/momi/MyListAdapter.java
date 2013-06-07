@@ -2,7 +2,7 @@ package edu.ucsb.cs.cs185.momi;
 
 import java.util.ArrayList;
 
-import com.example.mome.R;
+import edu.ucsb.cs.cs185.momi.R;
 
 import android.content.Context;
 import android.view.LayoutInflater;
