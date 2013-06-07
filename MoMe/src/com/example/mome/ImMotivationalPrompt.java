@@ -7,13 +7,25 @@ import android.app.Activity;
 import android.content.Intent;
 import android.util.Log;
 import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
-public class ImMotivationalPrompt extends Activity {
+public class ImMotivationalPrompt extends Activity implements OnClickListener{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_im_motivational_prompt);
+		
+		//add the buttons
+        Button friendsonly = (Button) findViewById(R.id.button_friendsonly);
+        Button anyone = (Button) findViewById(R.id.button_anyone);
+        
+  
+        friendsonly.setOnClickListener(this);
+        anyone.setOnClickListener(this);
+        
 	}
 
 	@Override
@@ -30,5 +42,27 @@ public class ImMotivationalPrompt extends Activity {
 	   setIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 	   startActivity(setIntent);
 	   finish();
+	}
+	
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+		
+		//motivate me is pressed
+		case R.id.button_friendsonly:
+			Intent myIntent0=new Intent(v.getContext(),ImMotivational.class);
+	        startActivity(myIntent0);
+	        finish();
+	        break;
+	        
+		case R.id.button_anyone:
+			Intent myIntent1=new Intent(v.getContext(),ImMotivational.class);
+	        startActivityForResult(myIntent1, 0);
+	        finish();
+	        break;
+	        
+		
+		}
+		
 	}
 }
