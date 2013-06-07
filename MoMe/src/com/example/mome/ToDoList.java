@@ -74,9 +74,9 @@ public class ToDoList extends Activity implements OnClickListener{
   //add entry to the List
   case R.id.add:
 	  
-	Intent myIntent1=new Intent(v.getContext(),AddTask.class);
-    startActivityForResult(myIntent1, 0); 
-	finish();
+	//Intent myIntent1=new Intent(v.getContext(),AddTask.class);
+   // startActivityForResult(myIntent1, 0); 
+	//finish();
  
    //Spinner spinner = (Spinner) findViewById(R.id.catagory);
    //String catagory = spinner.getSelectedItem().toString();
@@ -148,6 +148,11 @@ public class ToDoList extends Activity implements OnClickListener{
    //get the child info
    DetailInfo detailInfo =  headerInfo.getTaskList().get(childPosition);
    //display it or do something with it
+   
+ 	Intent myIntent2=new Intent(v.getContext(),Task.class);
+    startActivityForResult(myIntent2, 0); 
+ 	finish();
+   
    Toast.makeText(getBaseContext(), "Clicked on Detail " + headerInfo.getName() 
      + "/" + detailInfo.getName(), Toast.LENGTH_LONG).show();
    return false;
