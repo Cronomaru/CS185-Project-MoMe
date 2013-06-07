@@ -67,7 +67,6 @@ public class MainActivity extends Activity implements OnClickListener{
 	        startActivity(myIntent0);
 	        finish();
 	        break;
-	        
 		case R.id.button1:
 			Intent myIntent1=new Intent(v.getContext(),ImMotivationalPrompt.class);
 	        startActivityForResult(myIntent1, 0);
@@ -77,11 +76,13 @@ public class MainActivity extends Activity implements OnClickListener{
 		case R.id.avatar:
 			// change image
 			if (touches < 4){
-				v.setBackgroundResource(picList.get(touches));
+				//v.setImageResource(picList.get(touches));
+				v.setBackground(getResources().getDrawable(picList.get(touches)));
 				touches++;
 			}else{
 				touches = 0;
-                v.setBackgroundResource(picList.get(0));
+                //v.setBackgroundResource(picList.get(0));
+				v.setBackground(getResources().getDrawable(picList.get(R.drawable.avatar_welcome)));
 			}
 			
 			break;
