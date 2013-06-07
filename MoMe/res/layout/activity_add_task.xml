@@ -254,6 +254,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/editText_notes_answer"
+            android:onClick="sendData"
             android:text="@string/addtask_button_addtask" />
 
 

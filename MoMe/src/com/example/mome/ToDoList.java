@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 public class ToDoList extends Activity implements OnClickListener{
  
+ private static final int ADD_NEW = 0;
  private LinkedHashMap<String, HeaderInfo> myCatagories = new LinkedHashMap<String, HeaderInfo>();
  private ArrayList<HeaderInfo> catList = new ArrayList<HeaderInfo>();
  
@@ -74,9 +75,10 @@ public class ToDoList extends Activity implements OnClickListener{
   //add entry to the List
   case R.id.add:
 	  
-	//Intent myIntent1=new Intent(v.getContext(),AddTask.class);
-   // startActivityForResult(myIntent1, 0); 
-	//finish();
+	Intent intent1=new Intent(v.getContext(),AddTask.class);
+    startActivityForResult(intent1, 0); 
+    intent1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+    startActivityForResult(intent1, ADD_NEW);
  
    //Spinner spinner = (Spinner) findViewById(R.id.catagory);
    //String catagory = spinner.getSelectedItem().toString();
@@ -89,16 +91,16 @@ public class ToDoList extends Activity implements OnClickListener{
     
    //add a new item to the list
   // int groupPosition = addTask(catagory,task);
-   int groupPosition = addTask("Work","just testin");
+  // int groupPosition = addTask("Work","just testin");
    //notify the list so that changes can take effect
-   listAdapter.notifyDataSetChanged();
+   //listAdapter.notifyDataSetChanged();
        
    //collapse all groups
    collapseAll();
    //expand the group where item was just added
-   myList.expandGroup(groupPosition);
+  // myList.expandGroup(groupPosition);
    //set the current group to be selected so that it becomes visible
-   myList.setSelectedGroup(groupPosition);
+  // myList.setSelectedGroup(groupPosition);
     
    break;
  
@@ -106,6 +108,24 @@ public class ToDoList extends Activity implements OnClickListener{
  
   }
  }
+ 
+ @Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		// identify the result
+		if (requestCode == ADD_NEW) {
+			if (resultCode == RESULT_OK) { // The user picked a contact.
+			Bundle bundle = data.getExtras();
+			int groupPosition = addTask(bundle.getString("CATAGORY"), bundle.getString("TASK") +"  "+ bundle.getString("DUEDATE"));
+			
+			listAdapter.notifyDataSetChanged();
+			
+			 myList.expandGroup(groupPosition);
+			   //set the current group to be selected so that it becomes visible
+			  myList.setSelectedGroup(groupPosition);
+			
+			}
+		}
+	}
  
  
  //method to expand all groups
