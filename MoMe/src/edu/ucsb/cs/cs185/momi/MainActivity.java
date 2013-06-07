@@ -1,7 +1,9 @@
-package com.example.mome;
+package edu.ucsb.cs.cs185.momi;
 //testing github by editing this!
 //test push
 
+
+import com.example.mome.R;
 
 import android.os.Bundle;
 import android.app.Activity;

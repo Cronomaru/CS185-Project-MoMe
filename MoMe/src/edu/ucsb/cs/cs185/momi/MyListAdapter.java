@@ -1,6 +1,8 @@
-package com.example.mome;
+package edu.ucsb.cs.cs185.momi;
 
 import java.util.ArrayList;
+
+import com.example.mome.R;
 
 import android.content.Context;
 import android.view.LayoutInflater;
