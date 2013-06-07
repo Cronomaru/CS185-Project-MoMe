@@ -5,6 +5,7 @@ import java.util.LinkedHashMap;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -72,12 +73,19 @@ public class ToDoList extends Activity implements OnClickListener{
  
   //add entry to the List
   case R.id.add:
+	  
+	Intent myIntent1=new Intent(v.getContext(),AddTask.class);
+    startActivityForResult(myIntent1, 0); 
+	finish();
  
    //Spinner spinner = (Spinner) findViewById(R.id.catagory);
    //String catagory = spinner.getSelectedItem().toString();
   // EditText editText = (EditText) findViewById(R.id.task);
   // String task = editText.getText().toString();
   // editText.setText("");
+	  
+	  
+	  
     
    //add a new item to the list
   // int groupPosition = addTask(catagory,task);
