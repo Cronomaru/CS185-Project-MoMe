@@ -115,10 +115,9 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <string name="addtask_entercategory">Enter Category</string>
     <string name="title_activity_to_do_list">To Do List</string>
     <string name="main_immotivational">I\'m Motivational</string>
-<<<<<<< HEAD
+
     <color name="text_color">#000000</color>
-=======
+
     <string name="title_activity_signup">MainActivity</string>
->>>>>>> 3f7ee5cf0d9e70038d5c70856ecfe751c4117619
 
 </resources>
