@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:ems="10"
-            android:text="@string/addtask_nameoftask" />
+            android:hint="@string/addtask_nameoftask" />
 
         <CheckBox
             android:id="@+id/checkBox_duedate"
@@ -65,7 +65,7 @@
             android:layout_below="@id/textView_timerequiredtofinish"
             android:ems="4"
             android:inputType="number"
-            android:text="@string/addtask_days" >
+            android:hint="@string/addtask_days" >
 
             <requestFocus />
         </EditText>
@@ -78,7 +78,7 @@
             android:layout_toRightOf="@id/editText_days"
             android:ems="4"
             android:inputType="number"
-            android:text="@string/addtask_hours" />
+            android:hint="@string/addtask_hours" />
 
         <EditText
             android:id="@+id/editText_minutes"
@@ -88,7 +88,7 @@
             android:layout_toRightOf="@id/editText_hours"
             android:ems="4"
             android:inputType="number"
-            android:text="@string/addtask_minutes" />
+            android:hint="@string/addtask_minutes" />
         
         <AutoCompleteTextView
             android:id="@+id/autoCompleteTextView_category"
@@ -96,7 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/editText_days"
             android:ems="10"
-            android:text="@string/addtask_entercategory"
+            android:hint="@string/addtask_entercategory"
             android:textColor="@color/text_color" />
 
         <TextView

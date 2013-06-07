@@ -102,7 +102,7 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <string name="addtask_timerequiredtofinishcolon">"Time Required to Finish: "</string>
     <string name="addtask_hours">Hours</string>
     <string name="title_activity_login">MainActivity</string>
-    <string name="addtask_minutes">Minutes</string>
+    <string name="addtask_minutes">Mins</string>
     <string name="addtask_exactremindersquestion">Exact Reminders?</string>
     <string name="addtask_weeks">Weeks</string>
     <string name="addtask_beforeduedate">Before Due Date</string>
