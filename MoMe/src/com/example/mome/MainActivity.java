@@ -5,20 +5,35 @@ package com.example.mome;
 
 
 
+import java.util.ArrayList;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class MainActivity extends Activity implements OnClickListener{
+	
+	
+	public int touches = 0;
+	public ArrayList<Integer> picList = new ArrayList<Integer>(); 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+   
+    	// add avatars to list
+    	picList.add(R.drawable.avatar_01);
+    	picList.add(R.drawable.avatar_todo_suggestion);
+    	picList.add(R.drawable.avatar_todo_suggestion_task);
         
         //add the buttons
         Button motivateMe = (Button) findViewById(R.id.button_completed);
@@ -26,6 +41,9 @@ public class MainActivity extends Activity implements OnClickListener{
   
         motivateMe.setOnClickListener(this);
         imMotivated.setOnClickListener(this);
+        
+        ImageView avatar = (ImageView) findViewById(R.id.avatar);
+        avatar.setOnClickListener(this);
          
     }
 
@@ -38,10 +56,9 @@ public class MainActivity extends Activity implements OnClickListener{
     }
     
     
-
-
 	@Override
 	public void onClick(View v) {
+		
 		switch (v.getId()) {
 		
 		//motivate me is pressed
@@ -56,6 +73,18 @@ public class MainActivity extends Activity implements OnClickListener{
 	        startActivityForResult(myIntent1, 0);
 	        finish();
 	        break;
+	        
+		case R.id.avatar:
+			// change image
+			if (touches < 4){
+				v.setBackgroundResource(picList.get(touches));
+				touches++;
+			}else{
+				touches = 0;
+                v.setBackgroundResource(picList.get(0));
+			}
+			
+			break;
 	            
 		}
 		
