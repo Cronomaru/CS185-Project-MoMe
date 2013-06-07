@@ -78,13 +78,14 @@ public class MainActivity extends Activity implements OnClickListener{
 			if (touches < 4){
 				//v.setImageResource(picList.get(touches));
 				
-				((ImageView) v).setImageResource(R.drawable.avatar_01);
+				((ImageView) v).setImageResource(picList.get(touches));
 				//v.setBackground(getResources().getDrawable(picList.get(touches)));
 				touches++;
 			}else{
 				touches = 0;
                 //v.setBackgroundResource(picList.get(0));
-				v.setBackground(getResources().getDrawable(picList.get(R.drawable.avatar_welcome)));
+				//v.setBackground(getResources().getDrawable(picList.get(R.drawable.avatar_welcome)));
+				((ImageView) v).setImageResource(R.drawable.avatar_welcome);
 			}
 			
 			break;
