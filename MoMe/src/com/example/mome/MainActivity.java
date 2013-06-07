@@ -77,7 +77,9 @@ public class MainActivity extends Activity implements OnClickListener{
 			// change image
 			if (touches < 4){
 				//v.setImageResource(picList.get(touches));
-				v.setBackground(getResources().getDrawable(picList.get(touches)));
+				
+				((ImageView) v).setImageResource(R.drawable.avatar_01);
+				//v.setBackground(getResources().getDrawable(picList.get(touches)));
 				touches++;
 			}else{
 				touches = 0;
