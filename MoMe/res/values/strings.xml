@@ -123,6 +123,6 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <string name="addtask_category">Category</string>
     <string name="addtask_entercategory">Enter Category</string>
     <string name="title_activity_to_do_list">To Do List</string>
-    <string name="main_immotivational">I'm Motivational</string>
+    <string name="main_immotivational">I\'m Motivational</string>
 
 </resources>

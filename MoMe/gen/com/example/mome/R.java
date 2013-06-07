@@ -206,6 +206,7 @@ public final class R {
         public static final int immotivational_introdefault=0x7f05003b;
         public static final int immotivational_yourcurrentratingcolon=0x7f05003d;
         public static final int immotivational_yourmotivateescolon=0x7f05003e;
+        public static final int main_immotivational=0x7f05005c;
         public static final int main_login=0x7f050049;
         public static final int main_or=0x7f050057;
         public static final int main_password=0x7f050048;
