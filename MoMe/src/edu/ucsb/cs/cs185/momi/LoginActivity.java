@@ -5,6 +5,7 @@ import edu.ucsb.cs.cs185.momi.R;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.widget.Button;
 
 public class LoginActivity extends Activity {
 
@@ -12,6 +13,10 @@ public class LoginActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
+		
+		 //add the buttons
+        Button motivateMe = (Button) findViewById(R.id.loginbutton);
+        Button imMotivated = (Button) findViewById(R.id.signupbutton);
 	}
 	
 
@@ -21,5 +26,8 @@ public class LoginActivity extends Activity {
 		getMenuInflater().inflate(R.menu.login, menu);
 		return true;
 	}
+	
+	
+	
 
 }
