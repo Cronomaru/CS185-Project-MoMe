@@ -21,7 +21,7 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_mome">Mo Me</string>
-    <string name="title_motivateme">Motivate Me</string>
+    <string name="title_motivateme">Motivate Me!</string>
     <string name="title_todolist">To Do List</string>
     <string name="title_task">Task</string>
     <string name="title_addedittask">Add/Edit Task</string>
@@ -119,5 +119,7 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <color name="text_color">#000000</color>
 
     <string name="title_activity_signup">MainActivity</string>
+
+    <string name="title_immotivational">I\'m Motivational!</string>
 
 </resources>

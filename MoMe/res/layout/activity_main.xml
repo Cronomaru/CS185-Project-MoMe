@@ -30,6 +30,6 @@
         android:id="@+id/button_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="I&apos;m Motivated" />
+        android:text="@string/title_immotivational" />
 
 </LinearLayout>
