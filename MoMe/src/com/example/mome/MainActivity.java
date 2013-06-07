@@ -75,7 +75,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	        
 		case R.id.avatar:
 			// change image
-			if (touches < picList.size() ){				
+			if (touches < (picList.size()-1) ){				
 				((ImageView) v).setImageResource(picList.get(touches));
 				touches++;
 			}else{
