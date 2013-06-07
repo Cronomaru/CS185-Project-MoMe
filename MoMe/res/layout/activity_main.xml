@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/title_motivateme"
         android:scaleType="fitStart"
-        android:src="@drawable/avatar_01" />
+        android:src="@drawable/avatar_welcome" />
 
     <Button
         android:id="@+id/button_completed"
