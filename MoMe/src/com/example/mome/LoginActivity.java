@@ -9,6 +9,8 @@ import android.view.View.OnClickListener;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class LoginActivity extends Activity implements OnClickListener{
 
@@ -40,9 +42,27 @@ public class LoginActivity extends Activity implements OnClickListener{
 		switch (v.getId()) {
 		//login button is pressed
 		case R.id.loginbutton:
-			Intent myIntentMain=new Intent(v.getContext(),MainActivity.class);
+			EditText un   = (EditText)findViewById(R.id.username);
+			EditText pw   = (EditText)findViewById(R.id.password);
+			String username = un.getText().toString() ; 
+			String password = pw.getText().toString() ;
+			if(username.length()==0 && password.length()==0){
+				Toast.makeText(getBaseContext(), "Please enter a username and password.", 
+					     Toast.LENGTH_LONG).show();
+			}
+			else if(username.length()==0){
+				Toast.makeText(getBaseContext(), "Please enter a username.", 
+					     Toast.LENGTH_LONG).show();
+			}
+			else if(password.length()==0){
+				Toast.makeText(getBaseContext(), "Please enter a password.", 
+					     Toast.LENGTH_LONG).show();
+			}
+			else {
+				Intent myIntentMain=new Intent(v.getContext(),MainActivity.class);
 	        startActivity(myIntentMain);
 	        finish();
+			}
 	        break;
 	    //sign up button is pressed
 		case R.id.button_signup:
