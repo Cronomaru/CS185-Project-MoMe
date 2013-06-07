@@ -21,7 +21,7 @@ import android.widget.ImageView;
 public class MainActivity extends Activity implements OnClickListener{
 	
 	
-	public int touches = 0;
+	private int touches = 0;
 	public ArrayList<Integer> picList = new ArrayList<Integer>(); 
 
     @Override
@@ -75,16 +75,11 @@ public class MainActivity extends Activity implements OnClickListener{
 	        
 		case R.id.avatar:
 			// change image
-			if (touches < 4){
-				//v.setImageResource(picList.get(touches));
-				
+			if (touches < picList.size() ){				
 				((ImageView) v).setImageResource(picList.get(touches));
-				//v.setBackground(getResources().getDrawable(picList.get(touches)));
 				touches++;
 			}else{
 				touches = 0;
-                //v.setBackgroundResource(picList.get(0));
-				//v.setBackground(getResources().getDrawable(picList.get(R.drawable.avatar_welcome)));
 				((ImageView) v).setImageResource(R.drawable.avatar_welcome);
 			}
 			
