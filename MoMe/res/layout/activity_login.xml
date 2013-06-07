@@ -50,7 +50,7 @@
         android:text="@string/main_or" />
 
     <Button
-        android:id="@+id/signupbutton"
+        android:id="@+id/button_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/main_signup" />

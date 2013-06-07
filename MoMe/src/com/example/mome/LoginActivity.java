@@ -19,7 +19,7 @@ public class LoginActivity extends Activity implements OnClickListener{
 		
 		 //add the buttons
         Button login = (Button) findViewById(R.id.loginbutton);
-        Button signup = (Button) findViewById(R.id.signupbutton);
+        Button signup = (Button) findViewById(R.id.button_signup);
         
         login.setOnClickListener(this);
         signup.setOnClickListener(this);
@@ -45,10 +45,10 @@ public class LoginActivity extends Activity implements OnClickListener{
 	        finish();
 	        break;
 	    //sign up button is pressed
-		case R.id.signupbutton:
-			//Intent myIntent1=new Intent(v.getContext(),ImMotivationalPrompt.class);
-	        //startActivityForResult(myIntent1, 0);
-	        //finish();
+		case R.id.button_signup:
+			Intent myIntent1=new Intent(v.getContext(),ImMotivationalPrompt.class);
+	        startActivityForResult(myIntent1, 0);
+	        finish();
 			//NEED TO DO Stuff here ;)
 	        break;
 	            
