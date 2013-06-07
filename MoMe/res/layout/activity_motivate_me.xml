@@ -17,7 +17,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/button_toomuchtodo"
-        android:src="@drawable/ic_launcher" />
+        android:adjustViewBounds="true"
+        android:contentDescription="h"
+        android:src="@drawable/avatar_whatmotivation" />
 
     <Button
         android:id="@+id/button_toomuchtodo"
