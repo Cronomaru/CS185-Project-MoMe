@@ -18,7 +18,7 @@ import android.widget.Toast;
 // refer to http://www.mysamplecode.com/2012/10/android-expandablelistview-example.html
 // for help 
 
-public class toDolist extends Activity implements OnClickListener{
+public class ToDoList extends Activity implements OnClickListener{
  
  private LinkedHashMap<String, HeaderInfo> myCatagories = new LinkedHashMap<String, HeaderInfo>();
  private ArrayList<HeaderInfo> catList = new ArrayList<HeaderInfo>();
@@ -46,7 +46,7 @@ public class toDolist extends Activity implements OnClickListener{
   //get reference to the ExpandableListView
   myList = (ExpandableListView) findViewById(R.id.myList);
   //create the adapter by passing your ArrayList data
-  listAdapter = new MyListAdapter(toDolist.this, catList);
+  listAdapter = new MyListAdapter(ToDoList.this, catList);
   //attach the adapter to the list
   myList.setAdapter(listAdapter);
  

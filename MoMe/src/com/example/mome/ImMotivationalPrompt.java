@@ -2,6 +2,8 @@ package com.example.mome;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
+import android.util.Log;
 import android.view.Menu;
 
 public class ImMotivationalPrompt extends Activity {
@@ -18,5 +20,13 @@ public class ImMotivationalPrompt extends Activity {
 		getMenuInflater().inflate(R.menu.im_motivational_prompt, menu);
 		return true;
 	}
-
+	@Override
+	public void onBackPressed() {
+	   Log.d("CDA", "onBackPressed Called");
+	   Intent setIntent = new Intent(Intent.ACTION_MAIN);
+	   setIntent.addCategory(Intent.CATEGORY_HOME);
+	   setIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+	   startActivity(setIntent);
+	   finish();
+	}
 }
