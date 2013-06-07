@@ -1,9 +1,8 @@
-package edu.ucsb.cs.cs185.momi;
+package com.example.mome;
  
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
-import edu.ucsb.cs.cs185.momi.R;
 
 import android.app.Activity;
 import android.os.Bundle;

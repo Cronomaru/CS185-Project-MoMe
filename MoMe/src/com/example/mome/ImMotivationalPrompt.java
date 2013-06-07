@@ -1,6 +1,6 @@
-package edu.ucsb.cs.cs185.momi;
+package com.example.mome;
 
-import edu.ucsb.cs.cs185.momi.R;
+
 
 import android.os.Bundle;
 import android.app.Activity;

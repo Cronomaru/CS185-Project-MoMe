@@ -1,4 +1,4 @@
-package edu.ucsb.cs.cs185.momi;
+package com.example.mome;
 
 import java.util.ArrayList;
 
