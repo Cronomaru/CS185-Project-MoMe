@@ -249,6 +249,7 @@ public final class R {
         public static final int title_activity_motivate_me=0x7f05002e;
         public static final int title_activity_social=0x7f050039;
         public static final int title_activity_task=0x7f05002c;
+        public static final int title_activity_to_do_list=0x7f05005b;
         public static final int title_addedittask=0x7f050007;
         public static final int title_help=0x7f050009;
         public static final int title_mome=0x7f050003;

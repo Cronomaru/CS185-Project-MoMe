@@ -16,11 +16,7 @@
         <activity
             android:name="com.example.mome.MainActivity"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.example.mome.Task"
@@ -49,10 +45,19 @@
         <activity
             android:name="com.example.mome.LoginActivity"
             android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.example.mome.AddTask"
             android:label="@string/title_activity_add_task" >
+        </activity>
+        <activity
+            android:name="com.example.mome.ToDoList"
+            android:label="@string/title_activity_to_do_list" >
         </activity>
     </application>
 
