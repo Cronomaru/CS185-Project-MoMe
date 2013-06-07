@@ -173,8 +173,8 @@ public class ToDoList extends Activity implements OnClickListener{
     startActivityForResult(myIntent2, 0); 
  	finish();
    
-   Toast.makeText(getBaseContext(), "Clicked on Detail " + headerInfo.getName() 
-     + "/" + detailInfo.getName(), Toast.LENGTH_LONG).show();
+   //Toast.makeText(getBaseContext(), "Clicked on Detail " + headerInfo.getName() 
+    // + "/" + detailInfo.getName(), Toast.LENGTH_LONG).show();
    return false;
   }
    
