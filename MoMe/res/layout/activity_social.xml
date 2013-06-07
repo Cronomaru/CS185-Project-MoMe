@@ -64,7 +64,7 @@
             android:layout_below="@+id/textView_requestfromspecificfriend"
             android:layout_centerHorizontal="true"
             android:ems="10"
-            android:text="@string/social_autocomplete_friendsname" >
+            android:hint="@string/social_autocomplete_friendsname" >
 
             <requestFocus />
         </AutoCompleteTextView>
