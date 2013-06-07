@@ -117,8 +117,8 @@ public final class R {
         public static final int textView_yourcurrentrating=0x7f090023;
         public static final int textView_yourmotivatees=0x7f090025;
         public static final int timePicker_time=0x7f090005;
-		public static int loginbutton;
 		public static int signupbutton;
+		public static int loginbutton;
     }
     public static final class layout {
         public static final int activity_add_task=0x7f030000;
