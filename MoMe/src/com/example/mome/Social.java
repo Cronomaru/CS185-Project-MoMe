@@ -54,5 +54,13 @@ public class Social extends Activity implements OnClickListener{
 		}
 		
 	}
+	
+	public void onBackPressed() {
+	    Intent BackpressedIntent = new Intent();
+	    BackpressedIntent .setClass(getApplicationContext(),MotivateMe.class);
+	    startActivity(BackpressedIntent );
+	    finish();
+	}
+    
 
 }

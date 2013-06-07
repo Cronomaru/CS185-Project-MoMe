@@ -92,5 +92,12 @@ public class MainActivity extends Activity implements OnClickListener{
 		}
 		
 	}
+	
+	public void onBackPressed() {
+	    Intent BackpressedIntent = new Intent();
+	    BackpressedIntent .setClass(getApplicationContext(),LoginActivity.class);
+	    startActivity(BackpressedIntent );
+	    finish();
+	}
     
 }

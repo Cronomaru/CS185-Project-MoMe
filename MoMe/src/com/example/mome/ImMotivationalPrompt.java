@@ -36,13 +36,12 @@ public class ImMotivationalPrompt extends Activity implements OnClickListener{
 	}
 	@Override
 	public void onBackPressed() {
-	   Log.d("CDA", "onBackPressed Called");
-	   Intent setIntent = new Intent(Intent.ACTION_MAIN);
-	   setIntent.addCategory(Intent.CATEGORY_HOME);
-	   setIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-	   startActivity(setIntent);
-	   finish();
+	    Intent BackpressedIntent = new Intent();
+	    BackpressedIntent .setClass(getApplicationContext(),MainActivity.class);
+	    startActivity(BackpressedIntent );
+	    finish();
 	}
+    
 	
 	@Override
 	public void onClick(View v) {
@@ -65,4 +64,7 @@ public class ImMotivationalPrompt extends Activity implements OnClickListener{
 		}
 		
 	}
+	
+	
+	
 }

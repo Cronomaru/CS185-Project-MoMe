@@ -3,6 +3,7 @@ package com.example.mome;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 
 public class Chat extends Activity {
@@ -19,5 +20,13 @@ public class Chat extends Activity {
 		getMenuInflater().inflate(R.menu.chat, menu);
 		return true;
 	}
+	
+	public void onBackPressed() {
+	    Intent BackpressedIntent = new Intent();
+	    BackpressedIntent .setClass(getApplicationContext(),Social.class);
+	    startActivity(BackpressedIntent );
+	    finish();
+	}
+    
 
 }

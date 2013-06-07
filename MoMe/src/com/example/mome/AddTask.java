@@ -57,4 +57,12 @@ public class AddTask extends Activity {
 		super.finish();
 	}	
 	
+	public void onBackPressed() {
+	    Intent BackpressedIntent = new Intent();
+	    BackpressedIntent .setClass(getApplicationContext(),ToDoList.class);
+	    startActivity(BackpressedIntent );
+	    finish();
+	}
+    
+	
 }

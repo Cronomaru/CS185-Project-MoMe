@@ -4,6 +4,7 @@ package com.example.mome;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 
 public class Task extends Activity {
@@ -20,5 +21,13 @@ public class Task extends Activity {
 		getMenuInflater().inflate(R.menu.task, menu);
 		return true;
 	}
+	
+	public void onBackPressed() {
+	    Intent BackpressedIntent = new Intent();
+	    BackpressedIntent .setClass(getApplicationContext(),ToDoList.class);
+	    startActivity(BackpressedIntent );
+	    finish();
+	}
+    
 
 }

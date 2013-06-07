@@ -250,4 +250,12 @@ public class ToDoList extends Activity implements OnClickListener{
   getMenuInflater().inflate(R.menu.main, menu);
   return true;
  }
+ 
+ public void onBackPressed() {
+	    Intent BackpressedIntent = new Intent();
+	    BackpressedIntent .setClass(getApplicationContext(),MotivateMe.class);
+	    startActivity(BackpressedIntent );
+	    finish();
+	}
+ 
 }
