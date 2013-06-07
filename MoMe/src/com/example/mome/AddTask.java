@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class AddTask extends Activity {
 
@@ -33,10 +34,10 @@ public class AddTask extends Activity {
 		int month = datePicker.getMonth() + 1;
 		int year = datePicker.getYear();
 		
-		EditText Catagory   = (EditText)findViewById(R.id.autoCompleteTextView_category);
+		EditText Category   = (EditText)findViewById(R.id.autoCompleteTextView_category);
 		EditText Task   = (EditText)findViewById(R.id.editText_nameoftask);
 	
-		String catagory = Catagory.getText().toString() ; 
+		String category = Category.getText().toString() ; 
 		String task = Task.getText().toString() ;
 		
 		String duedate = "";
@@ -47,14 +48,27 @@ public class AddTask extends Activity {
         }
 		
 		
-	
+        if(category.length()==0 && task.length()==0){
+        	Toast.makeText(getBaseContext(), "Please enter a Task name and Category.", 
+				     Toast.LENGTH_LONG).show();
+        }
+        else if(task.length()==0){
+        	Toast.makeText(getBaseContext(), "Please enter a Task name.", 
+				     Toast.LENGTH_LONG).show();
+        }
+        else if(category.length()==0){
+        	Toast.makeText(getBaseContext(), "Please enter a Category.", 
+				     Toast.LENGTH_LONG).show();
+        }
+        else{
 		Intent data = new Intent(this, ToDoList.class);
 	
-		data.putExtra("CATAGORY",catagory);
+		data.putExtra("CATAGORY",category);
 		data.putExtra("TASK",task );
 		data.putExtra("DUEDATE",duedate);
 		setResult(RESULT_OK, data);
 		super.finish();
+        }
 	}	
 	
 	public void onBackPressed() {
