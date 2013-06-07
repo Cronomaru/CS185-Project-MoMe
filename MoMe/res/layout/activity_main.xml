@@ -15,14 +15,15 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/title_motivateme"
         android:scaleType="fitStart"
-        android:src="@drawable/avatar_welcome" />
+        android:src="@drawable/avatar_01" />
 
     <Button
         android:id="@+id/button_completed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="Sans"
-        android:text="@string/title_motivateme" />
+        android:text="@string/title_motivateme" 
+        />
 
     <Button
         android:id="@+id/button1"
