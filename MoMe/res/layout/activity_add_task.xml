@@ -17,6 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
+            android:layout_below="@id/textView_required"
             android:ems="10"
             android:hint="@string/addtask_nameoftask" />
 
@@ -25,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="false"
-            android:layout_below="@id/editText_nameoftask"
+            android:layout_below="@id/textView_extrainfo"
             android:text="@string/addtask_duedatequestion" />
 
         <DatePicker
@@ -94,7 +95,7 @@
             android:id="@+id/autoCompleteTextView_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/editText_days"
+            android:layout_below="@id/editText_nameoftask"
             android:ems="10"
             android:hint="@string/addtask_entercategory"
             android:textColor="@color/text_color" />
@@ -103,7 +104,7 @@
             android:id="@+id/textView_importance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/autoCompleteTextView_category"
+            android:layout_below="@id/editText_days"
             android:text="@string/task_importancecolon"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
@@ -258,6 +259,22 @@
             android:onClick="sendData"
             android:text="@string/addtask_button_addtask" />
 
+        <TextView
+            android:id="@+id/textView_required"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addtask_requiredcolon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_extrainfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/autoCompleteTextView_category"
+            android:text="@string/addtask_extrainfocolon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 

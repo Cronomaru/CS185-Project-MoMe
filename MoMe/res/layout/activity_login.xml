@@ -43,7 +43,7 @@
     <TextView
         android:paddingTop="50dp"
         android:paddingBottom="20dp"
-        android:id="@+id/textView1"
+        android:id="@+id/textView_required"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"

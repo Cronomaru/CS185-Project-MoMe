@@ -122,4 +122,8 @@ If you wait for perfect conditions, you will never get anything done.</string-a
 
     <string name="title_immotivational">I\'m Motivational!</string>
 
+    <string name="addtask_requiredcolon">"Required: "</string>
+
+    <string name="addtask_extrainfocolon">"Extra Information: "</string>
+
 </resources>
