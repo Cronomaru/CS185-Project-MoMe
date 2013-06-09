@@ -11,7 +11,15 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
-
+        
+        <TextView
+            android:id="@+id/textView_required"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addtask_requiredcolon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+        
         <EditText
             android:id="@+id/editText_nameoftask"
             android:layout_width="wrap_content"
@@ -20,6 +28,26 @@
             android:layout_below="@id/textView_required"
             android:ems="10"
             android:hint="@string/addtask_nameoftask" />
+        
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_nameoftask"
+            android:ems="10"
+            android:hint="@string/addtask_entercategory"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/textView_extrainfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/autoCompleteTextView_category"
+            android:text="@string/addtask_extrainfocolon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        
 
         <CheckBox
             android:id="@+id/checkBox_duedate"
@@ -91,14 +119,6 @@
             android:inputType="number"
             android:hint="@string/addtask_minutes" />
         
-        <AutoCompleteTextView
-            android:id="@+id/autoCompleteTextView_category"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editText_nameoftask"
-            android:ems="10"
-            android:hint="@string/addtask_entercategory"
-            android:textColor="@color/text_color" />
 
         <TextView
             android:id="@+id/textView_importance"
@@ -259,22 +279,7 @@
             android:onClick="sendData"
             android:text="@string/addtask_button_addtask" />
 
-        <TextView
-            android:id="@+id/textView_required"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/addtask_requiredcolon"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView_extrainfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/autoCompleteTextView_category"
-            android:text="@string/addtask_extrainfocolon"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textStyle="bold" />
 
     </RelativeLayout>
 
