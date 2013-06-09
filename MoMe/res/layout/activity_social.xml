@@ -39,7 +39,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView_usersname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/button_randomperson"
@@ -51,7 +51,7 @@
             android:id="@+id/textView_requestfromspecificfriend"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView2"
+            android:layout_below="@+id/textView_usersname"
             android:layout_centerHorizontal="true"
             android:text="@string/social_requestfromspecificfriendcolon"
             android:textAppearance="?android:attr/textAppearanceMedium"

@@ -74,17 +74,17 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <string name="motivateme_button_habits">I Have/Need Habits!</string>
     <string name="title_activity_im_motivational">ImMotivational</string>
     <string name="social_button_randomperson">Random Person</string>
-    <string name="social_previousmotivatorscolon">Previous Motivators:</string>
-    <string name="social_friendsavailablecolon">Friends Available:</string>
-    <string name="social_requestfromspecificfriendcolon">Request From Specific Friend:</string>
+    <string name="social_previousmotivatorscolon">Previous Motivators: </string>
+    <string name="social_friendsavailablecolon">Friends Available: </string>
+    <string name="social_requestfromspecificfriendcolon">Request From Specific Friend: </string>
     <string name="social_autocomplete_friendsname">Enter Friend\'s Name</string>
     <string name="social_button_request">Request</string>
     <string name="title_activity_social">Social</string>
-    <string name="immotivational_introcolon">Intro:</string>
+    <string name="immotivational_introcolon">Intro: </string>
     <string name="immotivational_introdefault">How can I help you?</string>
     <string name="immotivational_button_setintro">Set Intro</string>
-    <string name="immotivational_yourcurrentratingcolon">Your Current Rating:</string>
-    <string name="immotivational_yourmotivateescolon">Your Motivatees:</string>
+    <string name="immotivational_yourcurrentratingcolon">Your Current Rating: </string>
+    <string name="immotivational_yourmotivateescolon">Your Motivatees: </string>
     <string name="title_activity_im_motivational_prompt">ImMotivationalPrompt</string>
     <string name="immotivational_button_friendsonly">Friends Only</string>
     <string name="immotivational_button_anyone">Anyone</string>
@@ -97,9 +97,9 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <string name="main_password">Password</string>
     <string name="main_login">Login</string>
     <string name="main_signup">Sign up</string>
-    <string name="addtask_dayscolon">Days:</string>
+    <string name="addtask_dayscolon">Days: </string>
     <string name="addtask_days">Days</string>
-    <string name="addtask_timerequiredtofinishcolon">"Time Required to Finish: "</string>
+    <string name="addtask_timerequiredtofinishcolon">Time Required to Finish: </string>
     <string name="addtask_hours">Hours</string>
     <string name="title_activity_login">MainActivity</string>
     <string name="addtask_minutes">Mins</string>
@@ -107,7 +107,7 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <string name="addtask_weeks">Weeks</string>
     <string name="addtask_beforeduedate">Before Due Date</string>
     <string name="addtask_button_addreminder">Add Reminder</string>
-    <string name="addtask_notescolon">"Notes: "</string>
+    <string name="addtask_notescolon">Notes: </string>
     <string name="addtask_button_addtask">Add Task</string>
     <string name="main_or">Or</string>
     <string name="todolist_label">To Do List</string>
@@ -122,8 +122,12 @@ If you wait for perfect conditions, you will never get anything done.</string-a
 
     <string name="title_immotivational">I\'m Motivational!</string>
 
-    <string name="addtask_requiredcolon">"Required: "</string>
+    <string name="addtask_requiredcolon">Required: </string>
 
-    <string name="addtask_extrainfocolon">"Extra Information: "</string>
+    <string name="addtask_extrainfocolon">Extra Information: </string>
+
+    <string name="chat_button_send">Send</string>
+
+    <string name="chat_typetochat">Type to chat...</string>
 
 </resources>

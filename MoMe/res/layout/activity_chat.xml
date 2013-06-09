@@ -8,13 +8,64 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Chat" >
 
-    <TextView
-        android:id="@+id/textView_required"
+    <QuickContactBadge
+        android:id="@+id/quickContactBadge1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Chatting Stuff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/textView_chatintro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_usersname"
+        android:layout_toRightOf="@+id/quickContactBadge1"
+        android:text="@string/immotivational_introcolon"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView_userintro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView_chatintro"
+        android:layout_toRightOf="@+id/textView_chatintro"
+        android:text="@string/immotivational_introdefault"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quickContactBadge1"
+        android:text="ListView of chat messages?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/chat_button_send" />
+
+    <EditText
+        android:id="@+id/editText_chatinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="@string/chat_typetochat" />
+
+    <TextView
+        android:id="@+id/textView_usersname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_chatintro"
+        android:layout_alignParentTop="true"
+        android:text="User Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
 
 </RelativeLayout>
