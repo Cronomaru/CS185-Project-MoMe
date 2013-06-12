@@ -39,9 +39,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/main_login" />
-
-    <TextView
+ 	<ImageView
+        android:id="@+id/divider"
         android:paddingTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/title_motivateme"
+        android:src="@drawable/divider" />
+    <TextView
+        android:paddingTop="10dp"
         android:paddingBottom="20dp"
         android:id="@+id/textView_required"
         android:layout_width="match_parent"
