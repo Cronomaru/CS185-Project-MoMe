@@ -20,7 +20,10 @@ public class Task extends Activity {
 		Serializable child = getIntent().getSerializableExtra("child");
 		
 		TextView nameView = (TextView) findViewById(R.id.textView_name_answer);
-		nameView.setText(((DetailInfo) child).getName());
+		nameView.setText(((DetailInfo) child).getTask());
+		
+		TextView catView = (TextView) findViewById(R.id.textView_category_answer);
+		catView.setText(((DetailInfo) child).getCat());
 		
 	}
 

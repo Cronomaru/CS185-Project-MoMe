@@ -15,6 +15,8 @@ public class DetailInfo implements Serializable{
 	 String tTComplete = "";
 	 private String  Catagory = "";
 	 private String  Task = "";
+	 private int importance = 50;
+	 private int remFreq = 50; //reminder frequency
 	 
 	  
 	 public String getSequence() {
@@ -40,6 +42,18 @@ public class DetailInfo implements Serializable{
 	 }
 	 public void setTask(String task) {
 		 this.Task = task;
+	 }
+	 public int getImportance() {
+		 return importance;
+	 }
+	 public void setImportance(int importance) {
+		 this.importance = importance;
+	 }
+	 public int getRemFreq() {
+		 return remFreq;
+	 }
+	 public void setRemFreq(int remFreq) {
+		 this.remFreq = remFreq;
 	 }
 	  
 }
