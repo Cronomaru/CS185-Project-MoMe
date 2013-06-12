@@ -37,16 +37,28 @@
             android:ems="10"
             android:hint="@string/addtask_entercategory"
             android:textColor="@color/text_color" />
-
+ 		
+        
+        <ImageView
+ 		    android:id="@+id/divider01"
+ 		    android:paddingTop="30dp"
+ 		    android:paddingBottom="30dp"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:contentDescription="@string/title_motivateme"
+        	android:layout_below="@id/autoCompleteTextView_category"
+        	android:src="@drawable/divider" />
+        
         <TextView
             android:id="@+id/textView_extrainfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/autoCompleteTextView_category"
+            android:layout_below="@id/divider01"
             android:text="@string/addtask_extrainfocolon"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
 
+        
         
 
         <CheckBox
@@ -77,12 +89,23 @@
             android:layout_below="@id/checkBox_time"
             android:layout_centerHorizontal="false"
             android:layout_centerVertical="true" />
+        
+        
+        <ImageView
+ 		    android:id="@+id/divider02"
+ 		    android:paddingTop="20dp"
+ 		    android:paddingBottom="20dp"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:contentDescription="@string/title_motivateme"
+        	android:layout_below="@id/timePicker_time"
+        	android:src="@drawable/divider_light" />
 
         <TextView
             android:id="@+id/textView_timerequiredtofinish"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/timePicker_time"
+            android:layout_below="@id/divider02"
             android:text="@string/addtask_timerequiredtofinishcolon"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
@@ -119,12 +142,25 @@
             android:inputType="number"
             android:hint="@string/addtask_minutes" />
         
+        
+        
+        
+        <ImageView
+ 		    android:id="@+id/divider03"
+ 		    android:paddingTop="20dp"
+ 		    android:paddingBottom="20dp"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:contentDescription="@string/title_motivateme"
+        	android:layout_below="@id/editText_days"
+        	android:src="@drawable/divider_light" />
+        
 
         <TextView
             android:id="@+id/textView_importance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/editText_days"
+            android:layout_below="@id/divider03"
             android:text="@string/task_importancecolon"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
@@ -153,11 +189,23 @@
             android:text="@string/task_extremely"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
+        
+        <ImageView
+ 		    android:id="@+id/divider04"
+ 		    android:paddingTop="20dp"
+ 		    android:paddingBottom="20dp"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:contentDescription="@string/title_motivateme"
+        	android:layout_below="@id/textView_importance_lowlabel"
+        	android:src="@drawable/divider_light" />
+        
+        
         <TextView
             android:id="@+id/textView_reminders"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView_importance_lowlabel"
+            android:layout_below="@id/divider04"
             android:text="@string/task_reminderscolon"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
@@ -186,11 +234,22 @@
             android:text="@string/task_always"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
+        
+        <ImageView
+ 		    android:id="@+id/divider05"
+ 		    android:paddingTop="20dp"
+ 		    android:paddingBottom="20dp"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:contentDescription="@string/title_motivateme"
+        	android:layout_below="@id/textView_reminders_lowlabel"
+        	android:src="@drawable/divider_light" />
+        
         <TextView
             android:id="@+id/textView_exactreminders"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView_reminders_lowlabel"
+            android:layout_below="@id/divider05"
             android:text="@string/addtask_exactremindersquestion"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
@@ -255,11 +314,22 @@
             android:layout_toRightOf="@id/radioGroup_timeunit"
             android:text="@string/addtask_button_addreminder" />
 
+        
+        <ImageView
+ 		    android:id="@+id/divider06"
+ 		    android:paddingTop="20dp"
+ 		    android:paddingBottom="20dp"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:contentDescription="@string/title_motivateme"
+        	android:layout_below="@id/radioGroup_timeunit"
+        	android:src="@drawable/divider_light" />
+        
         <TextView
             android:id="@+id/textView_notes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/radioGroup_timeunit"
+            android:layout_below="@id/divider06"
             android:text="@string/addtask_notescolon"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
