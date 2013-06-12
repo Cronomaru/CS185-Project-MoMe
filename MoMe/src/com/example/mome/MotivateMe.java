@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MotivateMe extends Activity implements OnClickListener{
 
@@ -58,9 +59,8 @@ public class MotivateMe extends Activity implements OnClickListener{
 	        break;
 	        
 		case R.id.button_toolittletodo:
-			Intent myIntent1=new Intent(v.getContext(),MainActivity.class);
-	        startActivityForResult(myIntent1, 0);
-	        finish();
+			Toast.makeText(getBaseContext(), "Not currently available. :)", 
+				     Toast.LENGTH_SHORT).show();
 	        break;
 	        
 		case R.id.button_ineedcoachinghelp:
@@ -70,9 +70,8 @@ public class MotivateMe extends Activity implements OnClickListener{
 	        break;
 	            
 		case R.id.button_ihaveneedhabits:
-			Intent myIntent3=new Intent(v.getContext(),MainActivity.class);
-	        startActivityForResult(myIntent3, 0);
-	        finish();
+			Toast.makeText(getBaseContext(), "Not currently available. :)", 
+				     Toast.LENGTH_SHORT).show();
 	        break;
 		}
 		
