@@ -2,10 +2,13 @@ package com.example.mome;
 
 
 
+import java.io.Serializable;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
+import android.widget.TextView;
 
 public class Task extends Activity {
 
@@ -13,6 +16,12 @@ public class Task extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_task);
+		
+		Serializable child = getIntent().getSerializableExtra("child");
+		
+		TextView nameView = (TextView) findViewById(R.id.textView_name_answer);
+		nameView.setText(((DetailInfo) child).getName());
+		
 	}
 
 	@Override

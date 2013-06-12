@@ -115,7 +115,7 @@ public class ToDoList extends Activity implements OnClickListener{
 		if (requestCode == ADD_NEW) {
 			if (resultCode == RESULT_OK) { // The user picked a contact.
 			Bundle bundle = data.getExtras();
-			int groupPosition = addTask(bundle.getString("CATAGORY"), bundle.getString("TASK") +"  "+ bundle.getString("DUEDATE"));
+			int groupPosition = addTask(bundle.getString("CATAGORY"), bundle.getString("TASK") +"  "+ bundle.getString("DUEDATE"), bundle.getString("TASK"));
 			
 			listAdapter.notifyDataSetChanged();
 			
@@ -170,6 +170,7 @@ public class ToDoList extends Activity implements OnClickListener{
    //display it or do something with it
    
  	Intent myIntent2=new Intent(v.getContext(),Task.class);
+ 	myIntent2.putExtra("child",detailInfo);
     startActivityForResult(myIntent2, 0); 
  	finish();
    
@@ -212,7 +213,7 @@ public class ToDoList extends Activity implements OnClickListener{
 	  }
  }
  //here we maintain our tasks in various catagorys
- private int addTask(String catagory, String task){
+ private int addTask(String catagory, String name, String task){
  
   int groupPosition = 0;
    
@@ -236,7 +237,9 @@ public class ToDoList extends Activity implements OnClickListener{
   //create a new child and add that to the group
   DetailInfo detailInfo = new DetailInfo();
   //detailInfo.setSequence(String.valueOf(listSize));
-  detailInfo.setName(task);
+  detailInfo.setName(name);
+  detailInfo.setCat(catagory);
+  detailInfo.setTask(task);
   taskList.add(detailInfo);
   headerInfo.setTaskList(taskList);
  
