@@ -7,8 +7,11 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 public class AddTask extends Activity {
@@ -17,6 +20,35 @@ public class AddTask extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_add_task);
+		DatePicker datePicker = (DatePicker) findViewById(R.id.datePicker_duedate);		      
+    	datePicker.setEnabled(false);
+    	TimePicker timePicker = (TimePicker) findViewById(R.id.timePicker_time);		      
+    	datePicker.setEnabled(false);
+    	timePicker.setEnabled(false);
+    	
+    	CheckBox dueDate = (CheckBox) findViewById( R.id.checkBox_duedate);
+		dueDate.setOnCheckedChangeListener(new OnCheckedChangeListener()
+		{
+		    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
+		    {
+		    	DatePicker datePicker = (DatePicker) findViewById(R.id.datePicker_duedate);
+		    	datePicker.setEnabled(isChecked);
+
+		    }
+		});
+		
+		CheckBox dueTime = (CheckBox) findViewById( R.id.checkBox_time);
+		dueTime.setOnCheckedChangeListener(new OnCheckedChangeListener()
+		{
+		    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
+		    {
+		    	TimePicker timePicker = (TimePicker) findViewById(R.id.timePicker_time);
+		    	timePicker.setEnabled(isChecked);
+
+		    }
+		});
+		
+    	
 	}
 
 	@Override
@@ -25,6 +57,8 @@ public class AddTask extends Activity {
 		getMenuInflater().inflate(R.menu.add_task, menu);
 		return true;
 	}
+
+	
 	
 	
 	public void sendData(View v){
@@ -69,14 +103,16 @@ public class AddTask extends Activity {
 		setResult(RESULT_OK, data);
 		super.finish();
         }
-	}	
+	}
+	
+	
 	
 	public void onBackPressed() {
 	    Intent BackpressedIntent = new Intent();
 	    BackpressedIntent .setClass(getApplicationContext(),ToDoList.class);
 	    startActivity(BackpressedIntent );
 	    finish();
+	    
+		
 	}
-    
-	
-}
+}		
