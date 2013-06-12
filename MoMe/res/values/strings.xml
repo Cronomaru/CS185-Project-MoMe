@@ -101,7 +101,7 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <string name="addtask_days">Days</string>
     <string name="addtask_timerequiredtofinishcolon">Time Required to Finish: </string>
     <string name="addtask_hours">Hours</string>
-    <string name="title_activity_login">MainActivity</string>
+    <string name="title_activity_login">Login</string>
     <string name="addtask_minutes">Mins</string>
     <string name="addtask_exactremindersquestion">Exact Reminders?</string>
     <string name="addtask_weeks">Weeks</string>
@@ -118,7 +118,6 @@ If you wait for perfect conditions, you will never get anything done.</string-a
 
     <color name="text_color">#000000</color>
 
-    <string name="title_activity_signup">MainActivity</string>
 
     <string name="title_immotivational">I\'m Motivational!</string>
 
