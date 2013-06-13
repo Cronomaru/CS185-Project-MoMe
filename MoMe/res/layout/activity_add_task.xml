@@ -362,7 +362,8 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:maxEms="3"
-            android:text="@string/addtask_button_addtask" />
+            android:text="@string/addtask_button_addtask"
+            android:textSize="15sp" />
 
     </RelativeLayout>
 
