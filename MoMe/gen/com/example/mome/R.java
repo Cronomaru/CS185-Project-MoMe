@@ -105,12 +105,12 @@ public final class R {
         public static final int sequence=0x7f0a0057;
         public static final int spacingContainer=0x7f0a005d;
         public static final int textView_beforeduedate=0x7f0a0021;
-        public static final int textView_category=0x7f0a0051;
+        public static final int textView_category=0x7f0a004e;
         public static final int textView_category_answer=0x7f0a0053;
         public static final int textView_chatintro=0x7f0a0029;
         public static final int textView_chatmessages=0x7f0a002c;
         public static final int textView_color=0x7f0a0052;
-        public static final int textView_due=0x7f0a004e;
+        public static final int textView_due=0x7f0a004f;
         public static final int textView_due_answer=0x7f0a0056;
         public static final int textView_duedate=0x7f0a0036;
         public static final int textView_exactreminders=0x7f0a001a;
@@ -130,8 +130,8 @@ public final class R {
         public static final int textView_reminders_lowlabel=0x7f0a0017;
         public static final int textView_requestfromspecificfriend=0x7f0a0048;
         public static final int textView_required=0x7f0a0001;
-        public static final int textView_timerequired=0x7f0a004f;
-        public static final int textView_timerequired_answer=0x7f0a0050;
+        public static final int textView_timerequired=0x7f0a0050;
+        public static final int textView_timerequired_answer=0x7f0a0051;
         public static final int textView_timerequiredtofinish=0x7f0a000b;
         public static final int textView_userintro=0x7f0a002a;
         public static final int textView_usersname=0x7f0a0028;

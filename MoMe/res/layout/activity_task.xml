@@ -42,6 +42,15 @@
             android:text="@string/task_namecolon"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
+        
+       <TextView
+            android:id="@+id/textView_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_name"
+            android:text="@string/task_categorycolon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView_due"
@@ -68,15 +77,6 @@
             android:layout_below="@+id/textView_timerequired"
             android:text="Medium Text"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-        
-        <TextView
-            android:id="@+id/textView_category"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/textView_name"
-            android:text="@string/task_categorycolon"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView_color"
