@@ -10,8 +10,7 @@ public class DetailInfo implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private String sequence = "";
 	 private String name = "";
-	 String dueDate = "";
-	 String dueTime = "";
+	 String due = "";
 	 String tTComplete = "";
 	 private String  Catagory = "";
 	 private String  Task = "";
@@ -30,6 +29,12 @@ public class DetailInfo implements Serializable{
 	 }
 	 public void setName(String name) {
 	  this.name = name;
+	 }	 
+	 public String getDue() {
+		 return due;
+	 }
+	 public void setDue(String due) {
+		 this.due = due;
 	 }
 	 public String getCat() {
 		 return Catagory;

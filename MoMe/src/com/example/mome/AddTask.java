@@ -11,6 +11,7 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
@@ -20,6 +21,9 @@ public class AddTask extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_add_task);
+		TextView name = (TextView) findViewById(R.id.editText_nameoftask);
+		name.requestFocus();
+		
 		DatePicker datePicker = (DatePicker) findViewById(R.id.datePicker_duedate);		      
     	datePicker.setEnabled(false);
     	TimePicker timePicker = (TimePicker) findViewById(R.id.timePicker_time);		      

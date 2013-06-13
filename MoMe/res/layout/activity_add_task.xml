@@ -26,6 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_below="@id/textView_required"
+            
             android:ems="10"
             android:hint="@string/addtask_nameoftask" />
         
