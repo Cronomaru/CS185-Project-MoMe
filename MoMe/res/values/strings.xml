@@ -109,7 +109,7 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <string name="addtask_button_addreminder">Add Reminder</string>
     <string name="addtask_notescolon">Notes: </string>
     <string name="addtask_button_addtask">Add Task</string>
-    <string name="main_or">Or</string>
+    <string name="main_or">- or -</string>
     <string name="todolist_label">To Do List</string>
     <string name="addtask_category">Category</string>
     <string name="addtask_entercategory">Enter Category</string>
@@ -130,11 +130,12 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <string name="chat_typetochat">Type to chat...</string>
 
     <string name="chat_listofchatmessages">Chat messages would go here.
-For example:
+For example (not correctly formatted):
 Motiv Ator: Hi, how can I help?
 Motiva Tee: I really don\'t feel like finishing my homework!
 Motiv Ator: Well, when is it due?
 Motiva Tee: In 3 days!
-Motiv Ator: What will happen if you finish early?</string>
+Motiv Ator: How much have you done so far?
+</string>
 
 </resources>
