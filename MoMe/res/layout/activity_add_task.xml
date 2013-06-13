@@ -355,7 +355,14 @@
             android:onClick="sendData"
             android:text="@string/addtask_button_addtask" />
 
-
+        <Button
+            android:id="@+id/button_addtasktop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:maxEms="3"
+            android:text="@string/addtask_button_addtask" />
 
     </RelativeLayout>
 
