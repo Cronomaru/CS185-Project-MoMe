@@ -82,21 +82,21 @@ public class AddTask extends Activity {
 		String category = Category.getText().toString() ; 
 		String task = Task.getText().toString() ;
 		
-		String duedate = "N/A    ";
+		String duedate = "";
 		CheckBox checkBoxDueDate = (CheckBox) findViewById(R.id.checkBox_duedate);
         if (checkBoxDueDate.isChecked()) {
-            checkBoxDueDate.setChecked(false);
             duedate = month + "/" + day + "/" + year;
         }
         
         String duetime = "";
 		CheckBox checkBoxDueTime = (CheckBox) findViewById(R.id.checkBox_time);
-        if (checkBoxDueTime.isChecked()) {
-            checkBoxDueTime.setChecked(false);
+        if (checkBoxDueTime.isChecked() && checkBoxDueDate.isChecked()) {   
             duetime = hour + ":" + mins;
         }
-		
-		
+        
+        checkBoxDueDate.setChecked(false);
+        checkBoxDueTime.setChecked(false);
+        
         if(category.length()==0 && task.length()==0){
         	Toast.makeText(getBaseContext(), "Please enter a Task name and Category.", 
 				     Toast.LENGTH_LONG).show();

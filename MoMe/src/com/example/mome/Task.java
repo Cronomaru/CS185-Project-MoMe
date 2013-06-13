@@ -9,6 +9,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Task extends Activity {
 
@@ -25,6 +26,12 @@ public class Task extends Activity {
 		TextView catView = (TextView) findViewById(R.id.textView_category_answer);
 		catView.setText(((DetailInfo) child).getCat());
 		
+		TextView dueView = (TextView) findViewById(R.id.textView_due_answer);
+		if(((DetailInfo) child).getDue()=="")
+			dueView.setText("N/A");
+		else
+			dueView.setText(((DetailInfo) child).getDue());
+		
 	}
 
 	@Override
@@ -34,8 +41,14 @@ public class Task extends Activity {
 		return true;
 	}
 	
+	public void notImplemented(){
+		Toast.makeText(getBaseContext(), "Currently not implemented", 
+			     Toast.LENGTH_LONG).show();
+	}
+	
 	public void onBackPressed() {
 	    Intent BackpressedIntent = new Intent();
+	    setResult(RESULT_CANCELED, BackpressedIntent);        
 	    BackpressedIntent .setClass(getApplicationContext(),ToDoList.class);
 	    startActivity(BackpressedIntent );
 	    finish();

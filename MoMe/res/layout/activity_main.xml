@@ -35,6 +35,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title_immotivational" />
+    
+     <Button
+        android:id="@+id/button_todolistmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_todolist" />
+    
 
 </LinearLayout>
 </ScrollView>

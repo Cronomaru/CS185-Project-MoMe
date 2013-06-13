@@ -361,6 +361,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
+            android:onClick="sendData"
             android:maxEms="3"
             android:text="@string/addtask_button_addtask"
             android:textSize="15sp" />

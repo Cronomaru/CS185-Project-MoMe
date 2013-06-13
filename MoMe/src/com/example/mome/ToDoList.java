@@ -28,12 +28,14 @@ public class ToDoList extends Activity implements OnClickListener{
  
  private MyListAdapter listAdapter;
  private ExpandableListView myList;
+ ExpandableListView restore;
  
  @Override
  public void onCreate(Bundle savedInstanceState) {
   super.onCreate(savedInstanceState);
   setContentView(R.layout.to_do_list);
  
+
  // Spinner spinner = (Spinner) findViewById(R.id.catagory);
   // Create an ArrayAdapter using the string array and a default spinner layout
   //ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,

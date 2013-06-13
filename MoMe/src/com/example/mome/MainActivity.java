@@ -72,7 +72,11 @@ public class MainActivity extends Activity implements OnClickListener{
 	        startActivityForResult(myIntent1, 0);
 	        finish();
 	        break;
-	        
+		case R.id.button_todolistmain:
+			Intent myIntent2=new Intent(v.getContext(),ToDoList.class);
+	        startActivityForResult(myIntent2, 1);
+	        finish();
+	        break;
 		case R.id.avatar:
 			// change image
 			if (touches < picList.size() ){				
