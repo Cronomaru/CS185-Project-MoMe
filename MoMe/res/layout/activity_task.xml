@@ -42,12 +42,21 @@
             android:text="@string/task_namecolon"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
+        
+       <TextView
+            android:id="@+id/textView_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_name"
+            android:text="@string/task_categorycolon"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView_due"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView_name"
+            android:layout_below="@id/textView_category"
             android:text="@string/task_duecolon"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
@@ -68,21 +77,12 @@
             android:layout_below="@+id/textView_timerequired"
             android:text="Medium Text"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-        
-        <TextView
-            android:id="@+id/textView_category"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/textView_timerequired_answer"
-            android:text="@string/task_categorycolon"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView_category"
+            android:layout_below="@id/textView_timerequired_answer"
             android:text="@string/task_colorcolon"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textStyle="bold" />
@@ -101,9 +101,8 @@
             android:id="@+id/imageView_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/textView_importance"
-            android:layout_alignRight="@+id/textView_category"
-            android:layout_below="@id/textView_category_answer"
+            android:layout_alignBottom="@id/textView_color"
+            android:layout_alignTop="@id/textView_color"
             android:layout_toRightOf="@id/textView_color"
             android:src="@drawable/ic_launcher" />
 
