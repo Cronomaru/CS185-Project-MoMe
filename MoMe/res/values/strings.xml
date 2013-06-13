@@ -109,7 +109,7 @@ If you wait for perfect conditions, you will never get anything done.</string-a
     <string name="addtask_button_addreminder">Add Reminder</string>
     <string name="addtask_notescolon">Notes: </string>
     <string name="addtask_button_addtask">Add Task</string>
-    <string name="main_or">Or</string>
+    <string name="main_or">- or -</string>
     <string name="todolist_label">To Do List</string>
     <string name="addtask_category">Category</string>
     <string name="addtask_entercategory">Enter Category</string>
