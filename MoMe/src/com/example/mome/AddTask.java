@@ -72,17 +72,28 @@ public class AddTask extends Activity {
 		int month = datePicker.getMonth() + 1;
 		int year = datePicker.getYear();
 		
+		TimePicker timePicker = (TimePicker) findViewById(R.id.timePicker_time);
+		int hour = timePicker.getCurrentHour();
+		int mins = timePicker.getCurrentMinute();
+		
 		EditText Category   = (EditText)findViewById(R.id.autoCompleteTextView_category);
 		EditText Task   = (EditText)findViewById(R.id.editText_nameoftask);
 	
 		String category = Category.getText().toString() ; 
 		String task = Task.getText().toString() ;
 		
-		String duedate = "";
+		String duedate = "N/A    ";
 		CheckBox checkBoxDueDate = (CheckBox) findViewById(R.id.checkBox_duedate);
         if (checkBoxDueDate.isChecked()) {
             checkBoxDueDate.setChecked(false);
             duedate = month + "/" + day + "/" + year;
+        }
+        
+        String duetime = "";
+		CheckBox checkBoxDueTime = (CheckBox) findViewById(R.id.checkBox_time);
+        if (checkBoxDueTime.isChecked()) {
+            checkBoxDueTime.setChecked(false);
+            duetime = hour + ":" + mins;
         }
 		
 		
@@ -104,6 +115,7 @@ public class AddTask extends Activity {
 		data.putExtra("CATAGORY",category);
 		data.putExtra("TASK",task );
 		data.putExtra("DUEDATE",duedate);
+		data.putExtra("DUETIME",duetime);
 		setResult(RESULT_OK, data);
 		super.finish();
         }

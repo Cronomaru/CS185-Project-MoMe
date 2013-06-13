@@ -116,7 +116,7 @@ public class ToDoList extends Activity implements OnClickListener{
 			if (resultCode == RESULT_OK) { // The user picked a contact.
 			Bundle bundle = data.getExtras();
 			int groupPosition = addTask(bundle.getString("CATAGORY"), bundle.getString("TASK") +"  "+ bundle.getString("DUEDATE"), 
-					bundle.getString("TASK"),bundle.getString("DUEDATE") + bundle.getString("DUETIME"));
+					bundle.getString("TASK"),bundle.getString("DUEDATE") +" " + bundle.getString("DUETIME"));
 			
 			listAdapter.notifyDataSetChanged();
 			
