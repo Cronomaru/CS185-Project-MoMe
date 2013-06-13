@@ -66,10 +66,8 @@ public class LoginActivity extends Activity implements OnClickListener{
 	        break;
 	    //sign up button is pressed
 		case R.id.button_signup:
-			Intent myIntent1=new Intent(v.getContext(),ImMotivationalPrompt.class);
-	        startActivityForResult(myIntent1, 0);
-	        finish();
-			//NEED TO DO Stuff here ;)
+			Toast.makeText(getBaseContext(), "Not currently available. :)", 
+				     Toast.LENGTH_SHORT).show();
 	        break;
 	            
 		}
