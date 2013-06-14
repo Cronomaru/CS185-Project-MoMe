@@ -11,6 +11,7 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -67,6 +68,12 @@ public class AddTask extends Activity {
 	
 	public void sendData(View v){
 		
+		 SeekBar importance = (SeekBar) findViewById(R.id.seekBar_importance_answer);
+	     SeekBar frequency = (SeekBar) findViewById(R.id.seekBar_reminders_answer);
+	     
+	     int taskImp = importance.getProgress();
+	     int freq = frequency.getProgress();
+		
 		DatePicker datePicker = (DatePicker) findViewById(R.id.datePicker_duedate);
 		int day = datePicker.getDayOfMonth();
 		int month = datePicker.getMonth() + 1;
@@ -116,6 +123,8 @@ public class AddTask extends Activity {
 		data.putExtra("TASK",task );
 		data.putExtra("DUEDATE",duedate);
 		data.putExtra("DUETIME",duetime);
+		data.putExtra("IMPORTANCE",taskImp);
+		data.putExtra("FREQUENCY",freq);
 		setResult(RESULT_OK, data);
 		super.finish();
         }

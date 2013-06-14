@@ -38,9 +38,11 @@ public class MainActivity extends Activity implements OnClickListener{
         //add the buttons
         Button motivateMe = (Button) findViewById(R.id.button_completed);
         Button imMotivated = (Button) findViewById(R.id.button_signup);
+        Button toDoList = (Button) findViewById(R.id.button_todolistmain);
   
         motivateMe.setOnClickListener(this);
         imMotivated.setOnClickListener(this);
+        toDoList.setOnClickListener(this);
         
         ImageView avatar = (ImageView) findViewById(R.id.avatar);
         avatar.setOnClickListener(this);
@@ -74,7 +76,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	        break;
 		case R.id.button_todolistmain:
 			Intent myIntent2=new Intent(v.getContext(),ToDoList.class);
-	        startActivityForResult(myIntent2, 1);
+	        startActivity(myIntent2);
 	        finish();
 	        break;
 		case R.id.avatar:

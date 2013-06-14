@@ -118,7 +118,8 @@ public class ToDoList extends Activity implements OnClickListener{
 			if (resultCode == RESULT_OK) { // The user picked a contact.
 			Bundle bundle = data.getExtras();
 			int groupPosition = addTask(bundle.getString("CATAGORY"), bundle.getString("TASK") +"  "+ bundle.getString("DUEDATE"), 
-					bundle.getString("TASK"),bundle.getString("DUEDATE") +" " + bundle.getString("DUETIME"));
+					bundle.getString("TASK"),bundle.getString("DUEDATE") +" " + bundle.getString("DUETIME"),
+					bundle.getInt("IMPORTANCE"),bundle.getInt("FREQUENCY"));
 			
 			listAdapter.notifyDataSetChanged();
 			
@@ -216,7 +217,7 @@ public class ToDoList extends Activity implements OnClickListener{
 	  }
  }
  //here we maintain our tasks in various catagorys
- private int addTask(String catagory, String name, String task, String due){
+ private int addTask(String catagory, String name, String task, String due, int imp, int freq){
  
   int groupPosition = 0;
    
@@ -244,6 +245,8 @@ public class ToDoList extends Activity implements OnClickListener{
   detailInfo.setCat(catagory);
   detailInfo.setTask(task);
   detailInfo.setDue(due);
+  detailInfo.setImportance(imp);
+  detailInfo.setRemFreq(freq);
   taskList.add(detailInfo);
   headerInfo.setTaskList(taskList);
  

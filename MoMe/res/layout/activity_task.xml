@@ -75,7 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView_timerequired"
-            android:text="Medium Text"
+            android:text="currently not impemented"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView
@@ -119,9 +119,9 @@
             android:id="@+id/seekBar_importance_answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:progress="50"
-			android:max="100"
-            android:layout_below="@id/textView_importance" />
+            android:layout_below="@id/textView_importance"
+            android:max="100"
+            android:progress="50" />
 
         <TextView
             android:id="@+id/textView_importance_lowlabel"
